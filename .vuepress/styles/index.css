@@ -1,0 +1,70 @@
+/* 霞鹜文楷 + Ysabeau Office 字体 */
+@font-face {
+    font-family: 'LXGWBrightGB';
+    src: url('/fonts/LXGWBrightGB-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* 阿里妈妈东方大楷 */
+@font-face {
+    font-family: 'AlimamaDongFangDaKai';
+    src: url('/fonts/AlimamaDongFangDaKai-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* TODO: 默认字体：浏览器加载字体完成之前 */
+body {
+    font-family: 'LXGWBrightGB', sans-serif !important;
+    font-size: 18px !important;
+}
+
+.font-lxgwbright {
+    font-family: 'LXGWBrightGB', sans-serif !important;
+}
+
+.font-dongfangdakai {
+    font-family: 'AlimamaDongFangDaKai', sans-serif !important;
+}
+
+/* 公告 */
+.bulletin-wrapper .bulletin-content {
+    overflow-y: auto;
+}
+
+/* details 容器 内的代码移除边框 */
+.custom-container.details {
+    .language-java {
+        border: none;
+    }
+    .language-yaml {
+        border: none;
+    }
+}
+
+/* 博客卡片标题 */
+.post-item-container .title {
+    font-size: 1.250rem !important;
+}
+
+/* 首页分类与标签 */
+.home-blog-content .info-wrapper {
+    .category-wrapper .category-item .category-link .text {
+        font-size: 1rem !important;
+    }
+    .tag-wrapper .tag-item .tag-link {
+        font-size: 1rem !important;
+    }
+}
+
+/* 带图标的内容 */
+.xicon-content {
+    font-size: 1rem !important;
+}
+
+/* 页面导航 */
+.page-catalog-container {
+    overflow-y: auto;
+    scrollbar-width: none;
+}
