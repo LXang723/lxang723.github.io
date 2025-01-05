@@ -34,6 +34,12 @@ jobs:
       - name: Build VuePress site
         run: npm run build
 
+      # 设置 Git 配置
+      - name: Set up Git config
+        run: |
+          git config --global user.name "lxang723"
+          git config --global user.email "lxang723@163.com"
+      
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
