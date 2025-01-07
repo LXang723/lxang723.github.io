@@ -10,8 +10,7 @@ tags:
 
 我的博客地址：[www.lxang723.blog](https://www.lxang723.blog)  
 
-## 总结
-使用 vuepress-reco 2.x 做为博客主题。
+本博客使用 VuePress 2 和 vuepress-reco 2.x 主题搭建，并通过 GitHub Pages 和 GitHub Actions 实现自动化部署。
 
 ## 1. VuePress 和 Reco
 
@@ -21,7 +20,7 @@ VuePress 可以将 Markdown 文件编译为 HTML，并且根据 Markdown 文件�
 
 [VuePress 市场](https://marketplace.vuejs.press/zh/) 中提供很多插件与主题，[Reco](https://theme-reco.vuejs.press/) 则是一款简洁的 vuepress 博客 & 文档 主题。
 
-Reco 主题的使用可参考：[vuepress-reco 的使用](vuepress-reco.md) 。
+Reco 主题的使用可参考：[Vuepress-Reco 的使用](vuepress-reco.md) 。
 
 ## 2. 使用 GitHub Pages 创建个人站点
 
@@ -47,21 +46,24 @@ GitHub Pages 站点共有三种类型：个人、组织和项目。
 
 ### 2.1 为站点创建仓库
 
-① 在任何页面的右上角，点击 + 按钮，点击 `New repository`，新建仓库。  
-② 在 Repository name 输入 `<username>.github.io`。  
-③ 选择仓库可见性 `Public`。  
-④ 勾选 `Add a README file`，GitHub Pages 将查找 index.html、index.md 或 README.md 文件，作为站点的入口文件。  
-⑤ 点击 `Create repository`，创建仓库。
+- 在任何页面的右上角，点击 **+** 按钮，点击 `New repository`，新建仓库。  
+- 在 **Repository name** 输入 `<username>.github.io`。  
+- 选择仓库可见性 `Public`。  
+- 勾选 `Add a README file`。（GitHub Pages 将查找 index.html、index.md 或 README.md 文件，作为站点的入口文件）  
+- 点击 `Create repository`，创建仓库。
 
 ### 2.2 创建站点（配置站点的发布源）
 
 必须先在 GitHub 上有站点的仓库，然后才可创建站点。
 
-① 在 `<username>.github.io` 仓库中，点击 `Settings`，进入设置页面。  
-② 点击侧边栏 Code and automation（代码和自动化）下的 `Pages`，进入 GitHub Pages 配置页面。  
-③ Build and deployment（构建和部署）的 Source（源）下，选择 `Deploy from a branch` （从分支进行部署）。  
-④ Build and deployment 的 Branch（分支） 选择 `main`，folder 选择 `/(root)`，点击 Save 。  
-⑤ 点击 `Visit site`（访问网站）按钮，查看已发布的网站。
+- 在 `<username>.github.io` 仓库主页面中，点击 `Settings`，进入设置页面。  
+- 点击侧边栏 **Code and automation**（代码和自动化）下的 `Pages`，进入 **GitHub Pages** 配置页面。  
+- **Build and deployment**（构建和部署）的 **Source**（源）下，选择 `Deploy from a branch` （从分支进行部署）。  
+- **Build and deployment** 的 **Branch**（分支） 选择 `main`，**folder** 选择 `/(root)`，点击 Save 。  
+  注：后续使用 GitHub Actions 时，需将发布源切换为 `gh-pages` 分支。  
+- 点击 `Visit site`（访问网站）按钮，查看已发布的网站。
+
+上述操作只是 GitHub Pages 快速入门 。
 
 ---
 
@@ -88,31 +90,50 @@ GitHub Actions 是一种持续集成和持续交付 (CI/CD) 平台，可用于�
 
 [GitHub Actions 文档](https://docs.github.com/zh/actions)
 
-### 3.1 创建 Personal access tokens
+### 3.1 创建个人访问令牌
 
-① 进入 GitHub，点击右上角头像，选择 `Settings`。  
-② 点击侧边栏最下面的 **Developer Settings**。  
-③ 点击侧边栏 **Personal access tokens**，选择 `Tokens (classic)`。  
-④ 点击 `Generate new token` 按钮，选择 `Generate new toke (classic)`。  
-⑤ 填写 **Note** 备注，**Expiration** 选择 `No expiration`，**Select scopes**，勾选 `repo`权限，点击 `Generate token` 按钮。  
-⑥ 复制 token。忘记了可以进入 Note（你备注的那个），点击 `Regenerate token` 按钮重新生成。
+创建 Personal access tokens (PAT)。
 
-### 3.2 设置 Repository secrets
+- **登录 GitHub，进入个人设置**： 在右上角点击你的头像，然后选择 **Settings** 进入设置页面。  
+- **进入开发者设置**： 在左侧边栏中，滚动到最底部，点击 **Developer Settings**。  
+- **创建新 Token**： 在开发者设置页面，点击侧边栏 **Personal access tokens**，然后选择 **Tokens (classic)**。
+  点击右上角的 `Generate new token` 按钮，选择 **Generate new toke (classic)** 。  
+- **填写 Token 详细信息**：  
+  **Note**： 为这个 token 添加备注，方便你之后识别。  
+  **Expiration**： 选择 token 的有效期（可选）。如果你不希望 token 过期，可以选择 No expiration 。  
+  **Select scopes**： 勾选 `repo` 和 `workflow` 权限。
+- **生成 Token**： 配置完成后，点击 `Generate token` 按钮生成 token。
+- **复制 Token**： 生成后，立即复制并保存 token，因为你以后无法查看该 token。如果忘记复制，你只能重新生成一个新的 token。
+  点击条目进入 **Edit personal access token (classic)** ，点击 `Regenerate token` 按钮重新生成。
 
-① 在 `<username>.github.io` 仓库中，点击 `Settings`，进入设置页面。  
-② 点击侧边栏 **Security** 下的 `Secrets and variables`（秘钥和变量），选择 `Actions`，进入页面。  
-③ 点击 **Repository secrets** 部分的  `New repository secret` 按钮，添加仓库秘钥。  
-④ 填写 **Name** 名称为 `ACCESS_TOKEN`，填写 **Secret** 为复制的 token 。
+### 3.2 设置仓库秘钥
 
-### 3.2 编写工作流文件
+设置 Repository secrets：在 GitHub Actions 中使用 Personal Access Token 。 
 
-在 vuepress-reco 项目根目录下，创建一个名为 `.github/workflows/deploy.yml` 的文件。
-文件名没有强制要求，你可以自由选择文件名，例如 `deploy.yml`、`ci.yml` 或其他描述性名称。
-关键点是确保文件放置在 `.github/workflows` 目录中，并遵循正确的 YAML 格式和 GitHub Actions 配置规则。
+- 在仓库主页面中，点击 Settings > **Secrets and variables** > Actions，然后点击 `New repository secret` 按钮，添加仓库秘钥。 
+- 设置 **Name** 名称为 `ACCESS_TOKEN`，然后将生成的 token 粘贴到 **Secret**（修改时值为 Value） 栏中 。
 
-::: details deploy.yml
+### 3.3 配置工作流权限
+
+配置 Workflow permissions。
+
+- 在仓库主页面中，进入 Settings > **Actions** > General 。
+- 将 **Workflow permissions** 设置为 `Read and write permissions`。
+
+### 3.4 编写工作流文件
+
+在 vuepress-reco 项目根目录下，创建 `.github/workflows/deploy.yml` 的文件，定义自动部署流程。
+
+::: info Note
+若要使 GitHub 在存储库中发现任何 GitHub Actions 工作流，必须将工作流文件保存在名为 .github/workflows 的目录中。
+
+你可以为工作流文件指定所需的任何名称，但必须使用 .yml 或 .yaml 作为文件扩展名。
+:::
+
+::: details 我的&nbsp;deploy.yml
 
 ``` yaml
+
 name: Deploy VuePress Site
 
 # 触发条件：在 push 到 main  分支后
@@ -156,30 +177,61 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: .vuepress/dist
+
 ```
 :::
 
-注意：  
-`cache: npm`：启用缓存，可减少依赖安装时间。
-缓存机制会根据锁定文件（ package-lock.json 或 yarn.lock ）等文件生成唯一的缓存键。
+**注意**：`cache: npm`：可以缓存依赖项来加快工作流运行。
+默认情况下，会根据锁定文件（ package-lock.json 或 yarn.lock ）等文件生成唯一的缓存键。
 所以项目中的 package-lock.json 需提交到 Git 仓库中。  
 
-可以在仓库的 `Actions` 新建工作流文件和查看工作流程结果。
+**参考**：  
+[GitHub Actions 的工作流语法](https://docs.github.com/zh/actions/writing-workflows/workflow-syntax-for-github-actions)  
+[构建和测试 Node.js](https://docs.github.com/zh/actions/use-cases-and-examples/building-and-testing/building-and-testing-nodejs#installing-dependencies)  
+[缓存依赖项以加快工作流程](https://docs.github.com/zh/actions/writing-workflows/choosing-what-your-workflow-does/caching-dependencies-to-speed-up-workflows)  
+
+---
+
+完成以上步骤后，每次将文章推送到 `main` 分支，GitHub Actions 会自动触发工作流，构建并部署静态文件到 GitHub Pages。
+
+可以在仓库主页面的 `Actions` 查看工作流程结果。
+
+## 4. 使用自定义域名
+
+GitHub Pages 支持使用自定义域名，或者将网站的 URL 根目录从默认值（如 lxang723.github.io）更改为你拥有的任何域名。
+
+[NameSilo](https://www.namesilo.com/) ：是一家提供域名注册、DNS 托管、隐私保护以及其他相关互联网服务的公司。它因其低价、易于使用的控制面板以及免费的隐私保护而受到许多网站管理员和博客主的青睐。
+
+[Cloudflare](https://dash.cloudflare.com/) ：是一个提供内容分发网络（CDN）、网络安全、域名解析（DNS）以及其他互联网基础设施服务的公司。它主要通过提升网站的加载速度、提供 DDoS 防护、增强安全性等功能来帮助网站更高效、更安全地运行。
+
+TODO 
+
+NameSilo 的使用
+
+Cloudflare 的使用
+
+### 使用 NameSilo 购买和管理域名
+
+参考：  
+
+- [Github 部署个人网页 | 自定义域名](https://zhuanlan.zhihu.com/p/393050270)  
+- [附优惠码！NameSilo域名购买教程（2025年01月更新）](https://xmmblog.com/namesilo-domain-registration/)  
+
+等待 DNS 生效
+DNS 变更通常需要一些时间来传播。
+
+DNS传播检查器
+[DNS Propagation Checker](https://www.whatsmydns.net/)
+[DNS Checker](https://dnschecker.org/)
+
+### Cloudflare
 
 
 
-[NameSilo](https://www.namesilo.com/)
+可参考：
+
+- [Cloudflare使用教程（注册、添加站点、开启CDN、缓存优化设置等）](https://www.fujieace.com/web/safety/cloudflare-using-tutorials.html)
+- [Cloudflare Docs](https://developers.cloudflare.com/learning-paths/get-started-free/?utm_medium=email&utm_source=transactional&utm_campaign=ca-confirmed-free)
+
 
 [Free Logo Maker | NameSilo](https://www.namesilo.com/free-logo-maker)
-
-[管理 GitHub Pages 站点的自定义域](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
-
-在 GitHub Pages 下，选择“强制实施 HTTPS”。
-
-对您的 GitHub Pages 站点强制实施 HTTPS
-
-[Cloudflare](https://dash.cloudflare.com/)
-
-[Cloudflare Docs](https://developers.cloudflare.com/learning-paths/get-started-free/?utm_medium=email&utm_source=transactional&utm_campaign=ca-confirmed-free)
-
-

@@ -1,31 +1,27 @@
-/* 霞鹜文楷 + Ysabeau Office 字体 */
-@font-face {
-    font-family: 'LXGWBrightGB';
-    src: url('/fonts/LXGWBrightGB-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
-/* 阿里妈妈东方大楷 */
-@font-face {
-    font-family: 'AlimamaDongFangDaKai';
-    src: url('/fonts/AlimamaDongFangDaKai-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* TODO: 默认字体：浏览器加载字体完成之前 */
+/* Ysabeau Office + 霞鹜文楷 字体 */
 body {
-    font-family: 'LXGWBrightGB', sans-serif !important;
+    font-family: "Ysabeau Office", "LXGW WenKai Screen" !important;
+    font-weight: normal !important;
     font-size: 18px !important;
 }
 
-.font-lxgwbright {
-    font-family: 'LXGWBrightGB', sans-serif !important;
-}
-
-.font-dongfangdakai {
-    font-family: 'AlimamaDongFangDaKai', sans-serif !important;
+/* 阿里妈妈东方大楷 诗词 */
+.font-dong-fang-da-kai .theme-reco-md-content {
+    font-family: "Ysabeau Office", 'Alimama DongFangDaKai', sans-serif !important;
+    h2 > a > span {
+        font-size: 32px !important;
+        display: flex;             /* 启用 Flexbox 布局 */
+        justify-content: center;   /* 水平居中 */
+        align-items: center;       /* 垂直居中 */
+    }
+    p {
+        font-size: 24px !important;
+        line-height: 3rem;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* 公告 */
