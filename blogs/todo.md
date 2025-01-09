@@ -1,13 +1,13 @@
 ---
 sticky: 2
-title: 博客编写计划
+title: Todo
 # 该页面作为 config.ts 中 navbar Categories 和 Tags 的路径，
 # 不要改 categories 和 tags 属性
 date: 2024-12-26
 categories:
- - Overview
+ - Todo
 tags:
- - Overview
+ - Todo
 ---
 
 博客内容概览，也作为博客的编写计划，慢慢完善。  
@@ -24,7 +24,7 @@ tags:
 服务治理 注册中心（服务注册，发现，剔除）  
 ❷ 微服务之前的通讯（restful http 和 rpc tcp）  
 ❸ 客户端如何访问（网关）  
-④ 微服务出现问题，如何自理  
+④ 微服务出现问题，如何治理  
 服务容错，保证不能被外部环境影响，也不能被上游服务调用压垮，也不能被下游服务延迟拖垮  
 ⑤ 微服务问题排错（链路追踪）  
 

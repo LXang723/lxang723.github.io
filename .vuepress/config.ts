@@ -1,15 +1,15 @@
 import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
-import { viteBundler } from '@vuepress/bundler-vite'
-// import { webpackBundler } from '@vuepress/bundler-webpack'
+import recoTheme from "./theme.js";
+import { viteBundler } from '@vuepress/bundler-vite';
+// import { webpackBundler } from '@vuepress/bundler-webpack';
 // 水印插件
-// import { watermarkPlugin } from '@vuepress/plugin-watermark'
+// import { watermarkPlugin } from '@vuepress/plugin-watermark';
 // 看板娘插件
 // import { oml2dPlugin } from 'vuepress-plugin-oh-my-live2d';
 // 图片预览 https://ecosystem.vuejs.press/zh/plugins/features/medium-zoom.html
-import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
+import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom';
 // 代码高亮
-import { prismjsPlugin } from '@vuepress/plugin-prismjs'
+import { prismjsPlugin } from '@vuepress/plugin-prismjs';
 
 export default defineUserConfig({
   // base: "/",
@@ -18,10 +18,10 @@ export default defineUserConfig({
     // ['link', { rel: 'icon', href: '/favicon.ico' }]
     ['link', { rel: 'icon', href: '/images/head/square.png' }],
     // https://www.jsdelivr.com/package/npm/@fontsource/ysabeau-office
-    ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource/ysabeau-office@5.1.1/index.min.css'}],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource/ysabeau-office@5.1.1/index.min.css' }],
     // https://www.jsdelivr.com/?query=author%3A%20wc-ex
-    ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-lxgw-wen-kai-gb-screen/font.css'}],
-    ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-alimama-dong-fang-da-kai-regular@1.0.3/font.min.css'}]
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-lxgw-wen-kai-gb-screen/font.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-alimama-dong-fang-da-kai-regular@1.0.3/font.min.css' }]
   ],
   description: "柒月廿三，浅笔流年",
   bundler: viteBundler(),
@@ -71,6 +71,6 @@ export default defineUserConfig({
     // })
   ],
   // bundler: webpackBundler(),
-  theme: theme,
+  theme: recoTheme,
   // debug: true,
 });

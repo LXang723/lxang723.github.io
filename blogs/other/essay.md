@@ -3,9 +3,9 @@ sticky: 1
 title: 柒月廿三，浅笔流年
 date: 2025-01-03
 categories:
- - 其他
+ - Other
 tags:
- - 随笔
+ - Essay
 ---
 
 ## 柒月廿三，浅笔流年

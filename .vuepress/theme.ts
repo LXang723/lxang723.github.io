@@ -1,4 +1,6 @@
 import recoTheme from "vuepress-theme-reco";
+import navbar from "./navbar.js";
+import series from "./series.js";
 
 export default recoTheme({
     style: "@vuepress-reco/style-default",
@@ -19,9 +21,9 @@ export default recoTheme({
         }
     },
     colorMode: 'light',
-    logo: "/images/head/square.png",
+    logo: "/images/head.png",
     author: "LXang723",
-    authorAvatar: "/images/head/square.png",
+    authorAvatar: "/images/head.png",
     // https://theme-reco.vuejs.press/docs/theme/git.html
     // docsRepo 配置完，会在导航栏自动生成 GitHub 图标，而且会影响 编辑当前页面
     docsRepo: "https://github.com/LXang723/lxang723.github.io", // 文档源文件的仓库 URL
@@ -53,38 +55,7 @@ export default recoTheme({
     // 自动设置系列（bug）https://github.com/vuepress-reco/vuepress-theme-reco/issues/278
     // autoSetSeries: true,
     // https://theme-reco.vuejs.press/docs/theme/series.html
-    series: {
-        "/blogs/middleware/": [
-            {
-            text: "RabbitMQ",
-            children: ["rabbitmq/rabbitmq"],
-            },
-            {
-            text: "Elasticsearch",
-            children: ["elasticsearch/elastic"],
-            },
-        ],
-        "/blogs/tools/": [
-            {
-            text: "Git",
-            children: ["git/git", "git/git-cheat-sheet"],
-            },
-            {
-            text: "Docker",
-            children: ["docker/docker"],
-            },
-        ],
-        "/series/java/": [
-            {
-            text: "JavaSE",
-            children: ["javase/javase"],
-            },
-            {
-            text: "JavaWeb",
-            children: ["javaweb/javaweb"],
-            },
-        ],
-    },
+    series: series,
     // 自动设置分类（注意文件夹结构，只能使用一层文件夹）
     // autoSetBlogCategories: true,
     // autoAddCategoryToNavbar API 后期会做调整，但不会废弃，请谨慎使用。
@@ -95,40 +66,12 @@ export default recoTheme({
     // },
     // 当 autoAddCategoryToNavbar 为 true 时，则全部取默认值
     // autoAddCategoryToNavbar: true,
-    // 图标 https://www.xicons.org/#/zh-CN
     // 导航栏
-    navbar: [
-        { text: "首页", link: "/", icon: 'IconHome' }, // Home
-        // categories 和 tags 的路径需要根据 build 后的文件确定，设定一个不会变的
-        { text: "分类", link: "/categories/Overview/1.html", icon: 'IconCategory' }, // Categories
-        { text: "标签", link: "/tags/Overview/1.html", icon: 'IconTag' }, // Tags
-        // 内置页面： /timeline.html（归档、时间轴页面） 、/posts.html（博客列表页面） 、/friendship-link.html（友情链接）
-        // { text: "归档", link: "/timeline.html", icon: 'IconTimeline' },
-        { text: "博客", link: "/posts.html", icon: 'IconBlog' }, // Blogs
-        // { text: "链接", link: "/friendship-link.html", icon: 'IconLink' }, // Links
-        { text: "Java", link: "/series/java/javase/javase", icon: 'IconJava' },
-        // {
-        //   text: "Java",
-        //   icon: 'IconJava',
-        //   children: [
-        //     { text: "JavaSE", link: "/series/java/javase/javase", icon: 'IconJava' },
-        //     { text: "JavaWeb", link: "/series/java/javaweb/javaweb", icon: 'IconJava' }
-        //   ]
-        // },
-        {
-            text: "中间件", // Middleware
-            icon: 'IconMiddle',
-            children: [
-                { text: "RabbitMQ", link: "/blogs/middleware/rabbitmq/rabbitmq", icon: 'IconRabbitMQ' },
-                { text: "Elasticsearch", link: "/blogs/middleware/elasticsearch/elastic", icon: 'IconElasticsearch' }
-            ]
-        },
+    navbar: navbar,
+    socialLinks: [
+        { icon: 'IconSocialWeChat', link: '' },
+        { icon: 'IconSocialTwitter', link: 'https://x.com/723XangL' },
     ],
-    // socialLinks 和 docsRepo 同时配置，切换导航时会重复生成 IconGithub
-    // socialLinks: [
-    //   { icon: 'IconTag', link: 'https://twitter.com/yourname' },
-    //   { icon: 'IconHome', link: 'https://linkedin.com/in/yourname' },
-    // ],
     // 公告
     // https://theme-reco.vuejs.press/docs/theme/bulletin-popover.html
     bulletin: {

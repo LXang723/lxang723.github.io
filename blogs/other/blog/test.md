@@ -1,12 +1,12 @@
 ---
-title: 博客功能使用记录（复制粘贴用）
+title: Test（复制粘贴用）
 # 设置单个密码 123456
 # password: 14e1b600b1fd579f47433b88e8d85291
 date: 2024-09-09
 categories:
- - 其他
+ - Other
 tags:
- - 博客
+ - Blog
 ---
 
 对博客中使用的功能做一个简单的记录。

@@ -3,12 +3,12 @@ sticky: 2
 title: 我的博客搭建之路
 date: 2024-11-12
 categories:
- - 其他
+ - Other
 tags:
- - 博客
+ - Blog
 ---
 
-我的博客地址：[www.lxang723.blog](https://www.lxang723.blog)  
+我的博客地址：[lxang723.blog](https://lxang723.blog)  
 
 本博客使用 VuePress 2 和 vuepress-reco 2.x 主题搭建，并通过 GitHub Pages 和 GitHub Actions 实现自动化部署。
 
@@ -111,14 +111,16 @@ GitHub Actions 是一种持续集成和持续交付 (CI/CD) 平台，可用于�
 设置 Repository secrets：在 GitHub Actions 中使用 Personal Access Token 。 
 
 - 在仓库主页面中，点击 Settings > **Secrets and variables** > Actions，然后点击 `New repository secret` 按钮，添加仓库秘钥。 
-- 设置 **Name** 名称为 `ACCESS_TOKEN`，然后将生成的 token 粘贴到 **Secret**（修改时值为 Value） 栏中 。
+- 设置 **Name** 名称为 `ACCESS_TOKEN` （该名称在工作流文件中会用到），然后将生成的 token 粘贴到 **Secret**（修改时值为 Value） 栏中 。
 
 ### 3.3 配置工作流权限
 
-配置 Workflow permissions。
+GitHub Actions 在将静态文件推送到 gh-pages 分支时需要写入权限。
 
 - 在仓库主页面中，进入 Settings > **Actions** > General 。
 - 将 **Workflow permissions** 设置为 `Read and write permissions`。
+
+也可以在工作流文件中添加权限。
 
 ### 3.4 编写工作流文件
 
@@ -198,40 +200,34 @@ jobs:
 
 ## 4. 使用自定义域名
 
+
+
 GitHub Pages 支持使用自定义域名，或者将网站的 URL 根目录从默认值（如 lxang723.github.io）更改为你拥有的任何域名。
 
-[NameSilo](https://www.namesilo.com/) ：是一家提供域名注册、DNS 托管、隐私保护以及其他相关互联网服务的公司。它因其低价、易于使用的控制面板以及免费的隐私保护而受到许多网站管理员和博客主的青睐。
+[管理 GitHub Pages 站点的自定义域](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
-[Cloudflare](https://dash.cloudflare.com/) ：是一个提供内容分发网络（CDN）、网络安全、域名解析（DNS）以及其他互联网基础设施服务的公司。它主要通过提升网站的加载速度、提供 DDoS 防护、增强安全性等功能来帮助网站更高效、更安全地运行。
+### DNS 配置参考
 
-TODO 
+- [NameSilo 的使用](namesilo.md)
+- [Cloudflare 的使用](cloudflare.md)
 
-NameSilo 的使用
+如果从自定义 GitHub Actions 工作流进行发布，则忽略且无需任何 CNAME 文件。
 
-Cloudflare 的使用
+### 设置自定义域名
 
-### 使用 NameSilo 购买和管理域名
+- 在仓库主页面中，点击 **Settings > Pages**，进入 **GitHub Pages** 配置页面。 
+- 在 **Custom domain** 输入框中，输入你自己的域名，点击 `Save` 保存设置 。
 
-参考：  
+保存之后 GitHub Pages 会自动检测。
 
-- [Github 部署个人网页 | 自定义域名](https://zhuanlan.zhihu.com/p/393050270)  
-- [附优惠码！NameSilo域名购买教程（2025年01月更新）](https://xmmblog.com/namesilo-domain-registration/)  
+等待变绿， **DNS Check in Progress**（黄色） -> **DNS check successful**（绿色）。
 
-等待 DNS 生效
-DNS 变更通常需要一些时间来传播。
+![DNS check successful](dns-check-successful.png)
 
-DNS传播检查器
-[DNS Propagation Checker](https://www.whatsmydns.net/)
-[DNS Checker](https://dnschecker.org/)
+### 使用 HTTPS 保护 GitHub Pages 站点
 
-### Cloudflare
+等待发放 TLS 证书， 此时的 **Enforce HTTPS** 为禁用状态。
 
+发放 TLS 证书后，勾选 **Enforce HTTPS** 。
 
-
-可参考：
-
-- [Cloudflare使用教程（注册、添加站点、开启CDN、缓存优化设置等）](https://www.fujieace.com/web/safety/cloudflare-using-tutorials.html)
-- [Cloudflare Docs](https://developers.cloudflare.com/learning-paths/get-started-free/?utm_medium=email&utm_source=transactional&utm_campaign=ca-confirmed-free)
-
-
-[Free Logo Maker | NameSilo](https://www.namesilo.com/free-logo-maker)
+[使用 HTTPS 保护 GitHub Pages 站点](https://docs.github.com/zh/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
