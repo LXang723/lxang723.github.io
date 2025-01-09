@@ -222,7 +222,7 @@ GitHub Pages 支持使用自定义域名，或者将网站的 URL 根目录从�
 
 等待变绿， **DNS Check in Progress**（黄色） -> **DNS check successful**（绿色）。
 
-![DNS check successful](dns-check-successful.png)
+![DNS check successful](./assets/dns-check-successful.png)
 
 ### 使用 HTTPS 保护 GitHub Pages 站点
 
