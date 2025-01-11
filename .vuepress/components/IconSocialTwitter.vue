@@ -1,5 +1,5 @@
 <template>
-<svg fill="currentColor" height="800px" width="800px" version="1.1" id="XMLID_6_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<!-- <svg fill="currentColor" height="800px" width="800px" version="1.1" id="XMLID_6_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 24 24" xml:space="preserve">
 <g id="social-twitter">
 	<path d="M24,4.5c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6
@@ -8,5 +8,6 @@
 		c0.6,2,2.4,3.4,4.6,3.4c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14
 		c0-0.2,0-0.4,0-0.6C22.5,6.3,23.3,5.4,24,4.5z"/>
 </g>
-</svg>
+</svg> -->
+<svg t="1736537680261" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5201" width="200" height="200"><path d="M778.41 96h141.142L611.2 448.427 973.952 928H689.92L467.456 637.141 212.906 928H71.68l329.813-376.96L53.504 96h291.243l201.088 265.856z m-49.535 747.52h78.208L302.25 176.043h-83.926z" fill="currentColor" p-id="5202"></path></svg>
 </template>
