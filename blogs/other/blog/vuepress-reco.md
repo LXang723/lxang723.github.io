@@ -69,18 +69,10 @@ tags:
 注意绿色部分的 `path: '/vuepress-reco/vuepress-theme-reco-demo/archive/demo/2.x.zip'`。  
 其实上面的操作就是去 GitHub 的 [vuepress-theme-reco-demo](https://github.com/vuepress-reco/vuepress-theme-reco-demo/tree/demo/2.x) 仓库中
 的 `demo/2.x` 分支拉取代码。  
-demo 的代码已经很久没更新了。
 
-写这篇文时，发现这个主题的版本已经更新到了 2.0.0-rc.25，vuepress 的版本更新到了 2.0.0-rc.19。
+写这篇文时，发现这个主题的版本已经更新到了 2.0.0-rc.25 。 [查看 vuepress-theme-reco 版本号](https://www.npmjs.com/package/vuepress-theme-reco?activeTab=versions)
 
-[点击查看 vuepress-theme-reco 版本号](https://www.npmjs.com/package/vuepress-theme-reco?activeTab=versions)
-
-可在 `package.json` 文件中更换依赖包版本。
-
-::: danger 依赖冲突问题
-更换版本之后，在安装依赖时，可能会遇到依赖冲突，可以通过加上 --legacy-peer-deps 来忽略这些冲突并继续安装。  
-这个命令会强制 npm 忽略 peer dependencies 的版本冲突，继续安装依赖。
-:::
+可在 `package.json` 文件中更换 vuepress-theme-reco 的版本，一般初始化时（首次安装）就是最新版的，作者会更新 `demo/2.x` 仓库 package.json 中 vuepress-theme-reco 的版本。
 
 ## 遇到的问题
 
@@ -94,13 +86,15 @@ demo 的代码已经很久没更新了。
 
 [issues 189](https://github.com/vuepress-reco/vuepress-theme-reco/issues/189)
 
-### 社交链接 socialLinks 相关问题
+### 社交链接 socialLinks
 
 - socialLinks 和 docsRepo 同时配置，切换导航时会重复生成 IconGithub 。
 
-<ImgWithSize src="./assets/sociallinks-icon.png" alt="重复生成 IconGithub" :showBorder="true" />
+![sociallinks-icon](./assets/sociallinks-icon.png)
 
 将 `vuepress-theme-reco` 版本升级到 `2.0.0-rc.25` 解决。
+
+
 
 ## 自定义一些内容
 
@@ -118,6 +112,9 @@ demo 的代码已经很久没更新了。
 
 推荐图标库： [SVG REPO :: Nonicons Programming Icons Collection](https://www.svgrepo.com/collection/nonicons-programming-icons/)
 
+温馨提示：  
+记得设置 svg 中的 [fill](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/fill) 属性和 [stroke](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/stroke) 属性：`fill="currentColor"`、`stroke="currentColor"`，深色/浅色模式切换时会受影响 。
+
 ### 样式
 
 [VuePress 生态系统 > 样式](https://ecosystem.vuejs.press/zh/themes/default/styles.html)
@@ -134,39 +131,54 @@ demo 的代码已经很久没更新了。
 
 ### 字体
 
-我刚开始在项目中添加了字体文件，首次渲染时字体加载很慢（尽管 .woff2 文件相较于 .woff 和 .ttf 已经过压缩，但它仍然可能比较大，尤其是如果包含了很多字体样式和字符集），推荐使用 JSDelivr CDN 加速。
+我刚开始在项目中添加了 Lxgw Bright 字体文件，首次渲染时字体加载很慢。尽管 .woff2 文件相较于 .woff 和 .ttf 已经过压缩，但它仍然可能比较大，尤其是如果包含了很多字体样式和字符集。
+
+推荐使用 **适用于浏览器加载的汉字字体集**，可通过 CDN 直接引用或者下载包到自己的项目中。  
+地址：[Jsdelivr：wc-ex/cn-fontsource](https://www.jsdelivr.com/?query=author%3A%20wc-ex) | 
+[GitHub：wc-ex/cn-fontsource](https://github.com/wc-ex/cn-fontsource)，  
+
 
 [JSDelivr](https://www.jsdelivr.com/) 是一个免费的、快速且可靠的开源 CDN（内容分发网络），用于托管和分发 JavaScript 库、CSS 框架以及其他 Web 资源。它在开发者中非常受欢迎，因为它支持快速加载常见的前端库，如 jQuery、React、Vue.js、Bootstrap、Font Awesome 等。
 
-具体操作如下：
+[Lxgw Bright](https://github.com/lxgw/LxgwBright) 是由 Ysabeau 系列字体 与 霞鹜文楷系列字体 合并而成的字体，采用 Ysabeau Office 作为西文部分字体，包含 TrueType 格式以及 WOFF2 格式。
 
-#### config.ts 中配置 head
+Ysabeau Office： [@fontsource/ysabeau-office](https://www.jsdelivr.com/package/npm/@fontsource/ysabeau-office) 。    
+霞鹜文楷屏幕阅读版： [cn-fontsource-lxgw-wen-kai-gb-screen](https://www.jsdelivr.com/package/npm/cn-fontsource-lxgw-wen-kai-gb-screen)  。
+
+#### 1. 通过 npm 本地安装
+
+以 **霞鹜文楷屏幕阅读版**  为例： 
+
+``` bash
+npm i cn-fontsource-lxgw-wen-kai-gb-screen  
+```
+
+在 .vuepress/styles/index.css 中导入： 
+
+``` css
+@import "cn-fontsource-lxgw-wen-kai-gb-screen/font.css";  
+```
+
+#### 2. 或使用 Jsdelivr CDN 加载
+
+config.ts 中配置 head 。
 
 ``` ts
 head: [
-  ['link', { rel: 'icon', href: '/favicon.ico' }]
+  // ['link', { rel: 'icon', href: '/favicon.ico' }]
   ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource/ysabeau-office@5.1.1/index.min.css' }],
   ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-lxgw-wen-kai-gb-screen/font.css' }]
 ]
 ```
-
-#### .vuepress/styles/index.css 添加 body 字体样式
+#### 3. 在 .vuepress/styles/index.css 中添加 body 字体样式
 
 ``` css
 body {
-    font-family: "Ysabeau Office", "LXGW WenKai Screen" !important;
-    font-weight: normal !important;
-    font-size: 18px !important;
+  font-family: "Ysabeau Office", "LXGW WenKai Screen" !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
 }
 ```
-
-**推荐字体：**
-
-[Lxgw Bright](https://github.com/lxgw/LxgwBright) 是由 Ysabeau 系列字体 与 霞鹜文楷系列字体 合并而成的字体，采用 Ysabeau Office 作为西文部分字体，包含 TrueType 格式以及 WOFF2 格式。
-
-Ysabeau Office： [@fontsource/ysabeau-office](https://www.jsdelivr.com/package/npm/@fontsource/ysabeau-office)  
-
-霞鹜文楷屏幕阅读版： [cn-fontsource-lxgw-wen-kai-gb-screen](https://www.jsdelivr.com/package/npm/cn-fontsource-lxgw-wen-kai-gb-screen)  。作者 [wc-ex](https://www.jsdelivr.com/?query=author%3A%20wc-ex)，有很多中文字体。
 
 ## reco，伟大无需多言
 

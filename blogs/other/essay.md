@@ -10,6 +10,11 @@ tags:
 
 ## 柒月廿三，浅笔流年
 
+无为 但无所谓 一起浪费 呆坐 相对 放松 然后 慢慢起飞
+
+- Hello Kitty! Hello Hello Hello Kitty! 
+- la so mi so la so，mi so la so mi，re do la do re do，mi si。
+
 柒月廿三（qī yuè niàn sān），农历七月二十三日，我的生日。
 
 logo 是几年前我发小帮我弄的，一个长得很像柳俊烈的家伙。

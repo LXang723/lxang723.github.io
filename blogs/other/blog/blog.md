@@ -14,13 +14,15 @@ tags:
 
 ## 1. VuePress 和 Reco
 
-[VuePress](https://v2.vuepress.vuejs.org/zh/guide/introduction.html)  是一个以 Markdown 为中心的静态网站生成器。
+[VuePress](https://v2.vuepress.vuejs.org/zh/guide/introduction.html)  是一个以 Markdown 为中心的静态网站生成器。  
+VuePress 可以将 Markdown 文件编译为 HTML，并且根据 Markdown 文件的相对路径自动生成路由。  
+[VuePress 市场](https://marketplace.vuejs.press/zh/) 中提供很多插件与主题，[Reco](https://theme-reco.vuejs.press/) 则是一款简洁的 vuepress 博客 & 文档 主题。  
+Reco 主题的使用可参考：[Vuepress-Reco 的使用](vuepress-reco.md) 。  
 
-VuePress 可以将 Markdown 文件编译为 HTML，并且根据 Markdown 文件的相对路径自动生成路由。
-
-[VuePress 市场](https://marketplace.vuejs.press/zh/) 中提供很多插件与主题，[Reco](https://theme-reco.vuejs.press/) 则是一款简洁的 vuepress 博客 & 文档 主题。
-
-Reco 主题的使用可参考：[Vuepress-Reco 的使用](vuepress-reco.md) 。
+同时推荐：  
+- [VitePress](https://vitepress.dev/zh/)：由 Vite 和 Vue 驱动的静态站点生成器。
+- [@sugarat/theme](https://theme.sugarat.top/) ：简约风的 Vitepress 博客主题。  
+- [Curve](https://github.com/imsyy/vitepress-theme-curve)：A Simple VitePress Theme，以及作者博客预览 [無名小栈](https://blog.imsyy.top/) 。
 
 ## 2. 使用 GitHub Pages 创建个人站点
 
@@ -132,8 +134,6 @@ GitHub Actions 在将静态文件推送到 gh-pages 分支时需要写入权限�
 你可以为工作流文件指定所需的任何名称，但必须使用 .yml 或 .yaml 作为文件扩展名。
 :::
 
-::: details 我的&nbsp;deploy.yml
-
 ``` yaml
 
 name: Deploy VuePress Site
@@ -181,7 +181,6 @@ jobs:
           FOLDER: .vuepress/dist
 
 ```
-:::
 
 **注意**：`cache: npm`：可以缓存依赖项来加快工作流运行。
 默认情况下，会根据锁定文件（ package-lock.json 或 yarn.lock ）等文件生成唯一的缓存键。
@@ -199,8 +198,6 @@ jobs:
 可以在仓库主页面的 `Actions` 查看工作流程结果。
 
 ## 4. 使用自定义域名
-
-
 
 GitHub Pages 支持使用自定义域名，或者将网站的 URL 根目录从默认值（如 lxang723.github.io）更改为你拥有的任何域名。
 
