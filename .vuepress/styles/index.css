@@ -1,7 +1,11 @@
+@import "@fontsource/ysabeau-office/500.css";
+@import "cn-fontsource-lxgw-wen-kai-gb-screen/font.css";
+@import "cn-fontsource-alimama-dong-fang-da-kai-regular/font.css";
+
 /* Ysabeau Office + 霞鹜文楷 字体 */
 body {
     font-family: "Ysabeau Office", "LXGW WenKai Screen" !important;
-    font-weight: normal !important;
+    font-weight: 500 !important;
     font-size: 18px !important;
 }
 
@@ -25,8 +29,11 @@ body {
 }
 
 /* 公告 */
-.bulletin-wrapper .bulletin-content {
-    overflow-y: auto;
+.bulletin-wrapper {
+    width: 260px !important;
+    .bulletin-content {
+        overflow-y: auto;
+    }
 }
 
 /* details 容器 内的代码移除边框 */

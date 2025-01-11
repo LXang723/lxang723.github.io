@@ -11,10 +11,11 @@
     "build": "vuepress build ."
   },
   "dependencies": {
+    "@fontsource/ysabeau-office": "^5.1.1",
     "@vuepress/bundler-vite": "2.0.0-rc.18",
     "@vuepress/bundler-webpack": "2.0.0-rc.18",
-    "@vuepress/plugin-prismjs": "^2.0.0-rc.69",
-    "@vuepress/plugin-medium-zoom": "^2.0.0-rc.69",
+    "cn-fontsource-alimama-dong-fang-da-kai-regular": "^1.0.3",
+    "cn-fontsource-lxgw-wen-kai-gb-screen": "^1.0.6",
     "vue": "^3.5.0",
     "vuepress": "2.0.0-rc.18",
     "vuepress-plugin-oh-my-live2d": "^0.19.3",
