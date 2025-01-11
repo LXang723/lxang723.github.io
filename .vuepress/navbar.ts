@@ -11,7 +11,7 @@ const navbar = [
     // Blogs
     { text: "博客", link: "/posts.html", icon: 'IconBlog' },
     // Links
-    // { text: "链接", link: "/friendship-link.html", icon: 'IconLink' },
+    { text: "链接", link: "/friendship-link.html", icon: 'IconLink' },
     // { text: "Java", link: "/series/java/javase/javase", icon: 'IconCoffee' },
     {
         text: "Java",

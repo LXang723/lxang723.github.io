@@ -20,7 +20,7 @@ export default recoTheme({
             backToHome: '返回首页'
         }
     },
-    colorMode: 'light',
+    colorMode: 'dark',
     logo: "/images/head.png",
     author: "LXang723",
     authorAvatar: "/images/head.png",
@@ -69,7 +69,7 @@ export default recoTheme({
     // 导航栏
     navbar: navbar,
     socialLinks: [
-        { icon: 'IconSocialWeChat', link: '' },
+        { icon: 'IconSocialInstagram', link: 'https://www.instagram.com/723xangl' },
         { icon: 'IconSocialTwitter', link: 'https://x.com/723XangL' },
     ],
     // 公告
