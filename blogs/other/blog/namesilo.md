@@ -163,7 +163,7 @@ ns2.dnsowl.com
 ns3.dnsowl.com
 ```
 
-操作可参考 **# 管理域名** 部分。
+操作可参考 [管理域名](#管理域名) 部分。
 
 ::: warning 注意
 当你将域名的 DNS 服务器指向 Cloudflare 时，Cloudflare 会接管所有的 DNS 解析工作。

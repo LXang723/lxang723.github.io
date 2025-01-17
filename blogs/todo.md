@@ -60,7 +60,24 @@ CSS
 
 ### 许可证
 
+工厂、单例  
+证书监听器  项目启动时自动安装  
+ExecutionListener notify() start end  
+定时器  
+系统时间与业务时间合理化校验  
+
 ### 字段加密
+
+Mybatis  
+extends BaseTypeHandler  
+
+日志的实现
+Aspect  
+
+评分，线程池参数   
+
+quartz 抽象类 Task 实现 Job quartz  
+execute 执行时间记录  继承 Task 重写 run
 
 ## 技术教程  
 ### 环境搭建
@@ -69,15 +86,7 @@ CSS
 [DrawDB](https://github.com/drawdb-io/drawdb)  
 https://mp.weixin.qq.com/s/726UK626H8cPboRbjP1I1Q
 ## 读书笔记
-《十八岁出门远行》  
-摘抄  
-柏油马路起伏不止，马路像是贴在海浪上。我走在这条山区公路上，我像一条船。
 
-《晚熟的人》
-
-《悉达多》
-《局外人》
-《变形计》
 
 ## 追剧
 经典台词

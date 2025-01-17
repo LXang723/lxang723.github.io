@@ -2,6 +2,7 @@
 sticky: 2
 title: vuepress-reco 的使用
 date: 2024-11-12
+pageClass: img-max-height
 categories:
  - Other
 tags:
@@ -85,6 +86,8 @@ tags:
 - 系列不支持多级目录（未解决）。
 
 [issues 189](https://github.com/vuepress-reco/vuepress-theme-reco/issues/189)
+
+- 如果未指定 tags，只设置了 categories，如果有相同分类下的文章设置了 series，那么这个未指定 tags 的文档也会出现在系列中。
 
 ### 社交链接 socialLinks
 
@@ -186,7 +189,7 @@ body {
 
 [为作者贡献一杯奶茶](https://theme-reco.vuejs.press/docs/others/donate.html) :rose: :rose: :rose:。
 
-<ImgWithSize src="./assets/donate.png" alt="为作者贡献一杯奶茶" />
+![为作者贡献一杯奶茶](./assets/donate.png)
 
 ## 仓库链接
 

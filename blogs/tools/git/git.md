@@ -1,13 +1,14 @@
 ---
 title: Git 入门
 date: 2019-04-09
+pageClass: img-max-height
 tags:
  - Git
 categories:
  - Tools
 ---
 
-![text](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+## Git 介绍
 
 **Git** 是一个免费的开源分布式版本控制系统（Distributed Version Control System，简称 DVCS），旨在以快速和高效的方式处理从小型到超大型项目的所有内容。   
 
@@ -17,7 +18,9 @@ categories:
 Git 和其它版本控制系统（包括 Subversion 和近似工具）的主要差别在于 Git 对待数据的方式。 从概念上来说，其它大部分系统以文件变更列表的方式存储信息，这类系统（CVS、Subversion、Perforce 等等） 将它们存储的信息看作是一组基本文件和每个文件随时间逐步累积的差异 （它们通常称作 基于差异（delta-based） 的版本控制）。
 
 ## Git CheatSheet
-<ImgWithSize src="./assets/Git-CheatSheet.png" alt="Visual Git Cheat Sheet" width="700"/>
+
+![Visual Git Cheat Sheet](./assets/Git-CheatSheet.png)
+
 Git CheatSheet：可视化 Git 参考页，便于更加直观的了解 Git 命令。  
 网址：[NDP Software::Git CheatSheet](https://ndpsoftware.com/git-cheatsheet.html)  
 GitHub：[ndp / git-cheatsheet](https://github.com/ndp/git-cheatsheet)
