@@ -16,9 +16,10 @@ bannerBrand:
   lang: zh-CN
   title: 柒月廿三，浅笔流年
   description: LXang723's Blog
-  tagline: 你好，我是 LXang723，一名 Java 开发工程师，也是技术爱好者。在这片博客天地中，我将与大家分享我对技术、编程语言的学习经验，也会探讨一些职业发展的个人心得。除此之外，我也会分享一些日常生活中的小故事，包括旅行见闻、书单推荐以及如何保持高效的工作和学习方式。技术改变工作，成长塑造生活。
+  tagline: 你好，我是 LXang723，一名码农。目前正在摸索怎么写，写什么。
   buttons:
     - { text: Todo, link: './blogs/todo' }
+    # - { text: Resume, link: './blogs/other/resume' }
     - { text: Github, link: 'https://github.com/LXang723', type: 'plain' }
 blog:
 features:
