@@ -9,10 +9,10 @@ const navbar = [
     // 内置页面： /timeline.html（归档、时间轴页面） 、/posts.html（博客列表页面） 、/friendship-link.html（友情链接）
     // { text: "归档", link: "/timeline.html", icon: 'IconTimeline' },
     // Blogs
-    { text: "博客", link: "/posts.html", icon: 'IconBlog' },
+    // { text: "博客", link: "/posts.html", icon: 'IconBlog' },
     // Links
     { text: "链接", link: "/friendship-link.html", icon: 'IconLink' },
-    // { text: "Java", link: "/series/java/javase/javase", icon: 'IconCoffee' },
+    { text: "学习笔记", link: "/series/java/javase/javase", icon: 'IconNote' },
     {
         text: "Java",
         icon: 'IconCoffee',

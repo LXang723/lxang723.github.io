@@ -9,15 +9,11 @@ const series = {
             children: ["elasticsearch/elastic"],
         },
     ],
-    "/blogs/tools/": [
+    "/blogs/spring-boot/": [
         {
-            text: "Git",
-            children: ["git/git", "git/git-cheat-sheet"],
-        },
-        {
-            text: "Docker",
-            children: ["docker/docker"],
-        },
+            text: "Spring Boot",
+            children: ["auto-configuration", "ioc"],
+        }
     ],
     "/series/java/": [
         {

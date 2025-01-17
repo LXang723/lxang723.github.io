@@ -71,3 +71,11 @@ body {
     overflow-y: auto;
     scrollbar-width: none;
 }
+
+.img-max-height {
+    .theme-reco-md-content {
+        p > img {
+            max-height: 400px;
+        }
+    }
+}

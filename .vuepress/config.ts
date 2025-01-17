@@ -49,7 +49,7 @@ export default defineUserConfig({
     }),
     // 看板娘 https://oml2d.com/api/interfaces/Options.html
     oml2dPlugin({
-      primaryColor: '#5d67e8',
+      primaryColor: '#5d67e8', // #727cf5
       menus: {
         disable: false,
       },

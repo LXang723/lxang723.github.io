@@ -1,10 +1,11 @@
 import recoTheme from "vuepress-theme-reco";
 import navbar from "./navbar.js";
 import series from "./series.js";
+import links from "./links.js";
 
 export default recoTheme({
     style: "@vuepress-reco/style-default",
-    // primaryColor: '#3aa675', // 自定义主题的基础色  #3aa675
+    // primaryColor: '#3aa675', // 自定义主题的基础色  #3aa675 #727cf5
     locales: {
         '/': {
             selectLanguageName: '简体中文',
@@ -30,28 +31,7 @@ export default recoTheme({
     docsBranch: "main", // 文档源文件的仓库分支。它将会用于生成 编辑此页 的链接。
     docsDir: "", // 文档项目存放在工程的子目录。
     // lastUpdatedText: "最后更新时间",
-    friendshipLinks: [
-        {
-            title: 'vuepress-reco',
-            logo: 'https://avatars.githubusercontent.com/u/54167020?s=200&v=4',
-            link: 'https://theme-reco.vuejs.press/'
-        },
-        {
-            title: 'vuepress',
-            logo: 'https://avatars.githubusercontent.com/u/48539483?s=200&v=4',
-            link: 'https://v2.vuepress.vuejs.org/zh/'
-        },
-        {
-            title: 'spring-boot-2.7.18',
-            logo: 'https://avatars.githubusercontent.com/u/317776?s=200&v=4',
-            link: 'https://docs.spring.io/spring-boot/docs/2.7.18/reference/html/'
-        },
-        {
-            title: 'spring-5.3.39',
-            logo: 'https://avatars.githubusercontent.com/u/317776?s=200&v=4',
-            link: 'https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/'
-        },
-    ],
+    friendshipLinks: links,
     // 自动设置系列（bug）https://github.com/vuepress-reco/vuepress-theme-reco/issues/278
     // autoSetSeries: true,
     // https://theme-reco.vuejs.press/docs/theme/series.html
@@ -87,7 +67,7 @@ export default recoTheme({
             },
             {
                 type: "title",
-                content: "我的邮箱",
+                content: "我的邮箱 📧",
             },
             {
                 type: "text",
