@@ -106,7 +106,11 @@ body {
 
 @media (min-width: 1024px) {
     .categories-container {
-        padding-left: 10vw !important;
-        padding-right: 10vw !important;
+        padding-left: 5vw !important;
+        padding-right: 5vw !important;
+    }
+    .theme-container .theme-main {
+        padding-left: 5vw !important;
+        padding-right: 5vw !important;
     }
 }
