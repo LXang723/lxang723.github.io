@@ -4,7 +4,7 @@
 
 /* Ysabeau Office + 霞鹜文楷 字体 */
 body {
-    font-family: "Ysabeau Office", "LXGW WenKai Screen" !important;
+    font-family: "Ysabeau Office", "LXGW WenKai GB Screen" !important;
     font-weight: 500 !important;
     font-size: 18px !important;
 }
@@ -79,3 +79,27 @@ body {
         }
     }
 }
+
+/* <code> 标签内容（高亮内容） */
+.theme-container .page-content.theme-reco-md-content code,
+.theme-container .theme-reco-md-content.theme-reco-md-content code  {
+    font-size: 1rem !important;
+}
+
+/* 右侧页面导航 三级标题 显示不全 g */
+.page-catalog-container ul .page-catalog-menu-depth_3 {
+    line-height: 1.35rem !important;
+}
+
+/* .home-wrapper 通过增加选择器的特指性，使后加载的 CSS 更具优先级。 */
+.home-wrapper .banner-brand__wrapper {
+    /* height: 40vh !important;
+    margin-top: 0rem !important; */
+    .banner-brand__content .title {
+        font-size: 4.25rem !important;
+        /* background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%)  !important; */
+        /* background-image: linear-gradient(to right, #00F260, #0575E6 ) !important;  */
+    }
+}
+
+/* magic-card__bg */
