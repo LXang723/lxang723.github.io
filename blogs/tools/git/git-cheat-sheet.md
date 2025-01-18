@@ -88,22 +88,36 @@ git remote -v
 
 ## 遇到的问题
 
-fatal: unable to access 'xxx': OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0
+![fatal](fatal.png)
+
+先尝试 VPN -> 修复无法联网（VPN 停掉了，相关配置重置一下）
+
+fatal: unable to access 'xxx': Failed to connect to 127.0.0.1 port 10088 after 2121 ms: Could not connect to server
+
 ``` bash
 git config --global --unset http.proxy 
 git config --global --unset https.proxy
 ```
 
+fatal: unable to access 'xxx': OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0
+
+``` bash
+git config --global http.sslVerify "false"
+```
+
 fatal: unable to access 'xxx': Failed to connect to github.com port 443 after 21045 ms: Could not connect to server
+
+
+
+
+
+
+设置代理
 ``` bash
 git config --global http.proxy 127.0.0.1:10088
 git config --global https.proxy 127.0.0.1:10088
 ```
 设置 -> 网络和Internet -> 代理
-
-``` bash
-docker pull lxang723/lxang723_repo:git-cheatsheet
-```
 
 
 ## 将指定的文件添加到暂存区

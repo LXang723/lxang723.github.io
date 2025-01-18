@@ -177,7 +177,7 @@ head: [
 
 ``` css
 body {
-  font-family: "Ysabeau Office", "LXGW WenKai Screen" !important;
+  font-family: "Ysabeau Office", "LXGW WenKai GB Screen" !important;
   font-weight: normal !important;
   font-size: 18px !important;
 }

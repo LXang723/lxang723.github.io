@@ -9,6 +9,44 @@ tags:
  - Blog
 ---
 
+## primaryColor
+
+theme.ts 自定义主题的基础色  
+// primaryColor: '#0396FF',
+
+#3aa675
+#727cf5
+
+## 渐变配色网站
+
+- [CoolHue 2.0](https://webkul.github.io/coolhue/)
+
+- [Gradient Hunt](https://gradienthunt.com/)
+
+- [uiGradients](https://uigradients.com/)
+
+- [WebGradients](https://webgradients.com/)
+
+- [Grabient](https://www.grabient.com/)
+
+## 排版规范 
+
+来自 [JavaGuide 贡献指南](https://javaguide.cn/javaguide/contribution-guideline.html)
+
+- [中文技术文档写作风格指南](https://zh-style-guide.readthedocs.io/zh-cn/latest/)
+
+- [中文文案排版细则](https://dawner.top/posts/chinese-copywriting-rules/)
+
+- [写给大家看的中文排版指南](https://zhuanlan.zhihu.com/p/20506092)
+
+- [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
+
+---
+
+introduce
+
+usage
+
 对博客中使用的编写功能做一个简单的记录。
 
 ![channels4_banner](channels4_banner.jpg)
@@ -57,7 +95,7 @@ tags:
 
 ## Emoji
 
-[Emojipedia](https://emojipedia.org/zh)
+[emoji-cheat-sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 🍇 🍉  
 🔒🔓🔗
