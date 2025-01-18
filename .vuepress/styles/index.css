@@ -104,9 +104,8 @@ body {
 
 /* magic-card__bg */
 
-/* 针对 Xiaomi Pad 5 Pro 12.4 的分辨率 2560 x 1600 */
-@media only screen and (width: 2560px) and (height: 1600px) {
-    .theme-container .theme-main .categories-container {
+@media (min-width: 1024px) {
+    .categories-container {
         padding-left: 10vw !important;
         padding-right: 10vw !important;
     }
