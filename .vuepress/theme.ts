@@ -67,7 +67,7 @@ export default recoTheme({
             },
             {
                 type: "title",
-                content: "我的邮箱 📧",
+                content: "我的邮箱",
             },
             {
                 type: "text",

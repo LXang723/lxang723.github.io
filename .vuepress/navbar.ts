@@ -12,7 +12,32 @@ const navbar = [
     // { text: "博客", link: "/posts.html", icon: 'IconBlog' },
     // Links
     { text: "链接", link: "/friendship-link.html", icon: 'IconLink' },
-    { text: "学习笔记", link: "/series/java/javase/javase", icon: 'IconNote' },
+    { text: "学习笔记", link: "/blogs/learning-notes/overview", icon: 'IconNote' },
+    {
+        text: "面试指南",
+        icon: 'IconGuide',
+        children: [
+            {
+                text: 'Java',
+                children: [
+                    { text: "Java 基础", link: "/series/java/javase/javase" },
+                    { text: "Java 集合", link: "/series/java/javaweb/javaweb" },
+                    { text: "Java 并发", link: "/series/java/javase/javase" },
+                ],
+            },
+            {
+                text: 'Framework',
+                children: [
+                    { text: "Spring", link: "/series/java/javase/javase" },
+                    { text: "MyBatis", link: "/series/java/javaweb/javaweb" },
+                    { text: "Netty", link: "/series/java/javase/javase" },
+                ],
+            },
+            { text: "MySQL", link: "/series/java/javase/javase" },
+            { text: "SpringBoot", link: "/series/java/javase/javase" },
+            { text: "SpringCloud", link: "/series/java/javase/javase" },
+        ]
+    },
     {
         text: "Java",
         icon: 'IconCoffee',
@@ -21,14 +46,14 @@ const navbar = [
             { text: "JavaWeb", link: "/series/java/javaweb/javaweb", icon: 'IconJava' }
         ]
     },
-    {
-        text: "中间件", // Middleware
-        icon: 'IconMiddle',
-        children: [
-            { text: "RabbitMQ", link: "/blogs/middleware/rabbitmq/rabbitmq", icon: 'IconRabbitMQ' },
-            { text: "Elasticsearch", link: "/blogs/middleware/elasticsearch/elastic", icon: 'IconElasticsearch' }
-        ]
-    },
+    // {
+    //     text: "中间件", // Middleware
+    //     icon: 'IconMiddle',
+    //     children: [
+    //         { text: "RabbitMQ", link: "/blogs/middleware/rabbitmq/rabbitmq", icon: 'IconRabbitMQ' },
+    //         { text: "Elasticsearch", link: "/blogs/middleware/elasticsearch/elastic", icon: 'IconElasticsearch' }
+    //     ]
+    // },
 ]
 
 export default navbar;

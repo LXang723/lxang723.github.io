@@ -15,6 +15,20 @@ const series = {
             children: ["auto-configuration", "ioc"],
         }
     ],
+    "/blogs/learning-notes/": [
+        {
+            text: "英语",
+            children: ["eng"]
+        },
+        {
+            text: "日语",
+            children: []
+        },
+        {
+            text: "韩语",
+            children: []
+        }
+    ],
     "/series/java/": [
         {
             text: "JavaSE",
