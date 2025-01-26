@@ -4,7 +4,7 @@
 home: true
 modules:
   # - Banner
-  - BannerBrand
+  # - BannerBrand
   - Blog
   - Features
   - MdContent
@@ -13,7 +13,7 @@ modules:
 #   bgImage: '/bg.svg'
 bannerBrand:
   bgImage: '/bg.svg'
-  # bgImage: '/hhholographic.jpg'
+  # bgImage: '/.jpg'
   lang: zh-CN
   title: 柒月廿三，浅笔流年。
   description: LXang723's Blog
