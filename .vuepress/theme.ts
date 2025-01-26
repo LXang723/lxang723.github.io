@@ -97,7 +97,9 @@ export default recoTheme({
             // verify: true, // 验证码服务
             // notify: true,
             recordIP: true,
-            hideComments: true // 隐藏评论
+            hideComments: true, // 隐藏评论
+            avatar: 'mp', // (''/mp/identicon/monsterid/wavatar/robohash/retro/hide)
+            avatar_cdn: 'https://cravatar.cn/avatar/' // 自定义avatar cdn
         },
     },
 })

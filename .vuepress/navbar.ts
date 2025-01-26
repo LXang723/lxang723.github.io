@@ -52,7 +52,7 @@ const navbar = [
             // { text: 'SpringCloud', link: '/series/java/javase/javase' },
         ]
     },
-    { text: '留言板', link: '/blogs/other/message-board', icon: 'IconMessageBoard' },
+    { text: '留言板', link: '/docs/other/message-board', icon: 'IconMessageBoard' },
     // {
     //     text: 'Java',
     //     icon: 'IconCoffee',

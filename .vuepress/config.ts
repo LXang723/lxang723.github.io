@@ -47,44 +47,44 @@ export default defineUserConfig({
       },
       delay: 300,
     }),
-    // 看板娘 https://oml2d.com/api/interfaces/Options.html
-    // oml2dPlugin({
-    //   primaryColor: '#5d67e8', // #727cf5
-    //   menus: {
-    //     disable: false,
-    //   },
-    //   models: [
-    //     {
-    //       'path': 'https://model.oml2d.com/cat-white/model.json',
-    //       'scale': 0.15, // 模型的缩放比例
-    //       'position': [0, 20],
-    //       'stageStyle': {
-    //         'height': 350
-    //       }
-    //     },
-    //     {
-    //       'path': 'https://model.oml2d.com/cat-black/model.json',
-    //       'scale': 0.15,
-    //       'position': [0, 20],
-    //       'stageStyle': {
-    //         'height': 350
-    //       }
-    //     },
-    //     {
-    //       'path': 'https://model.oml2d.com/HK416-2-normal/model.json',
-    //       'position': [0, 60],
-    //       'scale': 0.08,
-    //       'stageStyle': {
-    //         'height': 450
-    //       }
-    //     }
-    //   ],
-    //   tips: {
-    //     idleTips: {
-    //       wordTheDay: true
-    //     }
-    //   }
-    // })
+    // 看板娘
+    oml2dPlugin({
+      primaryColor: '#5d67e8', // #727cf5
+      menus: {
+        disable: false,
+      },
+      models: [
+        {
+          'path': '/live2d/models/cat-white/model.json',
+          'scale': 0.15, // 模型的缩放比例
+          'position': [0, 20],
+          'stageStyle': {
+            'height': 350
+          }
+        },
+        {
+          'path': '/live2d/models/cat-black/model.json',
+          'scale': 0.15,
+          'position': [0, 20],
+          'stageStyle': {
+            'height': 350
+          }
+        },
+        {
+          'path': '/live2d/models/HK416-2-normal/model.json',
+          'position': [0, 60],
+          'scale': 0.08,
+          'stageStyle': {
+            'height': 450
+          }
+        }
+      ],
+      tips: {
+        idleTips: {
+          wordTheDay: true
+        }
+      }
+    })
   ],
   // bundler: webpackBundler(),
   theme: theme,
