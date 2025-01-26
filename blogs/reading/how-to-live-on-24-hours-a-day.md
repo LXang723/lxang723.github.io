@@ -11,10 +11,12 @@ categories:
 
 《How To Live On 24 Hours A Day》
 
-![如何度过每天的24小时](how-to-live-on-24-hours-a-day.png)
+![如何度过每天的24小时](how-to-live-on-24-hours-a-day.svg)
 
 **你必须在每天的24⼩时⾥，获得健康、快乐、⾦钱、满⾜感、他⼈的
 尊重和不朽灵魂的升华。**
+
+《如何度过每天的24小时》是一本探讨时间管理和生活方式的经典著作。
 
 
 
