@@ -4,7 +4,7 @@
 home: true
 modules:
   # - Banner
-  # - BannerBrand
+  - BannerBrand
   - Blog
   - Features
   - MdContent
