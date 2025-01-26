@@ -72,8 +72,8 @@ export default recoTheme({
                 type: 'text',
                 content: `
                 <ul>
-                    <li><a href='https://www.cnblogs.com/july23'>lxang723@163.com<a/></li>
-                    <li><a href='https://blog.csdn.net/LXang723'>lxang723@gmail.com<a/></li>
+                    <li>lxang723@163.com</li>
+                    <li>lxang723@gmail.com</li>
                 </ul>`,
                 style: 'font-size: 16px;',
             },
@@ -97,7 +97,7 @@ export default recoTheme({
             // verify: true, // 验证码服务
             // notify: true,
             recordIP: true,
-            // hideComments: true // 隐藏评论
+            hideComments: true // 隐藏评论
         },
     },
 })
