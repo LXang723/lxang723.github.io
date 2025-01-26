@@ -1,7 +1,6 @@
 ---
 title: 我的博客搭建之路
 date: 2024-11-12
-hideComments: false
 ---
 
 我的博客地址：[lxang723.blog](https://lxang723.blog)  
