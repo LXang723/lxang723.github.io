@@ -1,5 +1,5 @@
-import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import { defineUserConfig } from 'vuepress';
+import theme from './theme.js';
 import { viteBundler } from '@vuepress/bundler-vite';
 // import { webpackBundler } from '@vuepress/bundler-webpack';
 // 看板娘插件
@@ -10,8 +10,8 @@ import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom';
 import { prismjsPlugin } from '@vuepress/plugin-prismjs';
 
 export default defineUserConfig({
-  // base: "/",
-  title: "柒月廿三",
+  // base: '/',
+  title: '柒月廿三',
   head: [
     // https://favicon.io/favicon-converter/
     // ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -25,9 +25,9 @@ export default defineUserConfig({
     // ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-lxgw-wen-kai-gb-screen/font.css' }],
     // ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-alimama-dong-fang-da-kai-regular@1.0.3/font.min.css' }]
   ],
-  description: "柒月廿三，浅笔流年",
+  description: '柒月廿三，浅笔流年',
   bundler: viteBundler(),
-  host: "127.0.0.1",
+  host: '127.0.0.1',
   port: 18888,
   // open: true,
   plugins: [
@@ -48,43 +48,43 @@ export default defineUserConfig({
       delay: 300,
     }),
     // 看板娘 https://oml2d.com/api/interfaces/Options.html
-    oml2dPlugin({
-      primaryColor: '#5d67e8', // #727cf5
-      menus: {
-        disable: false,
-      },
-      models: [
-        {
-          "path": "https://model.oml2d.com/cat-white/model.json",
-          "scale": 0.15, // 模型的缩放比例
-          "position": [0, 20],
-          "stageStyle": {
-            "height": 350
-          }
-        },
-        {
-          "path": "https://model.oml2d.com/cat-black/model.json",
-          "scale": 0.15,
-          "position": [0, 20],
-          "stageStyle": {
-            "height": 350
-          }
-        },
-        {
-          "path": "https://model.oml2d.com/HK416-2-normal/model.json",
-          "position": [0, 60],
-          "scale": 0.08,
-          "stageStyle": {
-            "height": 450
-          }
-        }
-      ],
-      tips: {
-        idleTips: {
-          wordTheDay: true
-        }
-      }
-    })
+    // oml2dPlugin({
+    //   primaryColor: '#5d67e8', // #727cf5
+    //   menus: {
+    //     disable: false,
+    //   },
+    //   models: [
+    //     {
+    //       'path': 'https://model.oml2d.com/cat-white/model.json',
+    //       'scale': 0.15, // 模型的缩放比例
+    //       'position': [0, 20],
+    //       'stageStyle': {
+    //         'height': 350
+    //       }
+    //     },
+    //     {
+    //       'path': 'https://model.oml2d.com/cat-black/model.json',
+    //       'scale': 0.15,
+    //       'position': [0, 20],
+    //       'stageStyle': {
+    //         'height': 350
+    //       }
+    //     },
+    //     {
+    //       'path': 'https://model.oml2d.com/HK416-2-normal/model.json',
+    //       'position': [0, 60],
+    //       'scale': 0.08,
+    //       'stageStyle': {
+    //         'height': 450
+    //       }
+    //     }
+    //   ],
+    //   tips: {
+    //     idleTips: {
+    //       wordTheDay: true
+    //     }
+    //   }
+    // })
   ],
   // bundler: webpackBundler(),
   theme: theme,

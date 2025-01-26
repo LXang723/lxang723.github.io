@@ -83,6 +83,7 @@ body {
 /* <code> 标签内容（高亮内容） */
 .theme-container .page-content.theme-reco-md-content code,
 .theme-container .theme-reco-md-content.theme-reco-md-content code  {
+    font-family: "Ysabeau Office", "LXGW WenKai GB Screen" !important;
     font-size: 1rem !important;
 }
 
@@ -93,8 +94,8 @@ body {
 
 /* .home-wrapper 通过增加选择器的特指性，使后加载的 CSS 更具优先级。 */
 .home-wrapper .banner-brand__wrapper {
-    /* height: 40vh !important;
-    margin-top: 0rem !important; */
+    /* height: 40vh !important; */
+    /* margin-top: 0rem !important; */
     .banner-brand__content .title {
         font-size: 4.25rem !important;
         /* background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%)  !important; */
@@ -104,7 +105,7 @@ body {
 
 /* magic-card__bg */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .categories-container {
         padding-left: 5vw !important;
         padding-right: 5vw !important;
@@ -113,4 +114,4 @@ body {
         padding-left: 5vw !important;
         padding-right: 5vw !important;
     }
-}
+} */
