@@ -1,8 +1,6 @@
 ---
-sticky: 2
+sticky: 3
 title: Todo
-# 该页面作为 config.ts 中 navbar Categories 和 Tags 的路径，
-# 不要改 categories 和 tags 属性
 date: 2024-12-26
 categories:
  - Todo
@@ -12,14 +10,33 @@ tags:
 
 博客内容概览，也作为博客的编写计划，慢慢完善。  
 用过的东西做一个记录。  
-写完的做一个内部链接（路由路径）。
+写完的做一个索引页（内部链接、路由路径）。
 
-## 面试
+## 技术笔记（面试）
 
-## 微服务相关
-### 网关 
+### Java 基础
+- [x] [Java 序列化](/series/tech/java/basic/serialization.md)
+- [ ] 数据类型
+- [x] 异常
+- [ ] 反射
+- [ ] 泛型
+- [ ] 注解
 
-## 中间件
+### 常用框架
+
+#### Spring
+
+- [ ] [Spring Boot 自动配置](/blogs/spring-boot/auto_configuration.md)
+
+#### Spring Boot
+
+#### Spring MVC（先跳过）
+
+#### Mybatis
+
+#### Mybatis Plus
+
+### 微服务相关
 
 ❶ 微服务如何管理？  
 服务治理 注册中心（服务注册，发现，剔除）  
@@ -27,34 +44,27 @@ tags:
 ❸ 客户端如何访问（网关）  
 ④ 微服务出现问题，如何治理  
 服务容错，保证不能被外部环境影响，也不能被上游服务调用压垮，也不能被下游服务延迟拖垮  
-⑤ 微服务问题排错（链路追踪）  
+⑤ 微服务问题排错（链路追踪） 
 
+#### 网关 
 
-
-
+#### 中间件
 
 ## 编程语言  
-
-### Java
 
 [//]: (Go)
 
 [//]: (Python)
 
-## 框架相关
-
-### Spring
-[Spring Boot 自动配置](/blogs/spring-boot/auto_configuration.md)
-### Spring Boot
-
-### Mybatis
-
-### Mybatis Plus
-
 ## 前端
 
 JavaScript  
+
 CSS
+
+Vue
+
+React
 
 ## 项目经验分享  
 
@@ -82,23 +92,19 @@ quartz 抽象类 Task 实现 Job quartz
 execute 执行时间记录  继承 Task 重写 run
 
 ## 技术教程  
+
 ### 环境搭建
 
 ## 工具
+
 [DrawDB](https://github.com/drawdb-io/drawdb)  
 https://mp.weixin.qq.com/s/726UK626H8cPboRbjP1I1Q
-## 读书笔记
+
+## 阅读笔记
 
 
-## 追剧
+## 追番追剧
 经典台词
-
 
 ## 随笔  
 
-
-## 歌词
-朴树  
-许巍  
-宋冬野  
-陈粒  

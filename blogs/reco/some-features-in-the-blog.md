@@ -1,8 +1,12 @@
 ---
-title: Test（密码 123456）
+title: 博客里的一些功能
 # 设置单个密码 123456
-password: 14e1b600b1fd579f47433b88e8d85291
-date: 2024-09-09
+# password: 14e1b600b1fd579f47433b88e8d85291
+date: 2024-11-12
+tags:
+ - Blog
+categories:
+ - Blog
 ---
 
 ## 渐变配色网站
@@ -27,6 +31,9 @@ date: 2024-09-09
 introduce
 
 usage
+
+<mark>高亮</mark>  
+<u>下划线</u>
 
 对博客中使用的编写功能做一个简单的记录。
 

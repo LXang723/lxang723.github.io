@@ -1,8 +1,12 @@
 ---
-sticky: 2
-title: vuepress-reco 的使用
+title: Vuepress-Reco 的使用记录
 date: 2024-11-12
 pageClass: img-max-height
+tags:
+ - Reco
+ - Blog
+categories:
+ - Blog
 ---
 
 [vuepress-reco](https://theme-reco.vuejs.press/) ：一款简洁的 vuepress 博客 & 文档 主题。

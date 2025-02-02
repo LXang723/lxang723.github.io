@@ -1,6 +1,11 @@
 ---
-title: NameSilo 的使用
+title: NameSilo 的使用记录
 date: 2025-01-09
+tags:
+ - NameSilo
+ - Blog
+categories:
+ - Blog
 ---
 
 [NameSilo](https://www.namesilo.com/) ：是一家提供域名注册、DNS 托管、隐私保护以及其他相关互联网服务的公司。它因其低价、易于使用的控制面板以及免费的隐私保护而受到许多网站管理员和博客主的青睐。

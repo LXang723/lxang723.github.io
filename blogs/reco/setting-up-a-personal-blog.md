@@ -1,6 +1,11 @@
 ---
-title: 我的博客搭建之路
+sticky: 1
+title: 搭建个人博客
 date: 2024-11-12
+tags:
+ - Blog
+categories:
+ - Blog
 ---
 
 我的博客地址：[lxang723.blog](https://lxang723.blog)  

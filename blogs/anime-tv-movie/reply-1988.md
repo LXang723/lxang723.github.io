@@ -2,7 +2,7 @@
 title: 请回答 1988
 date: 2024-09-09
 tags:
-  - 追剧
+  - K-Drama
 categories:
   - 追番追剧
 ---

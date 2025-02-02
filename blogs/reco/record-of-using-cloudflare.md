@@ -1,6 +1,11 @@
 ---
-title: Cloudflare 的使用
+title: Cloudflare 的使用记录
 date: 2025-01-09
+tags:
+ - Cloudflare
+ - Blog
+categories:
+ - Blog
 ---
 
 [Cloudflare](https://dash.cloudflare.com/) ：是一个提供内容分发网络（CDN）、网络安全、域名解析（DNS）以及其他互联网基础设施服务的公司。它主要通过提升网站的加载速度、提供 DDoS 防护、增强安全性等功能来帮助网站更高效、更安全地运行。

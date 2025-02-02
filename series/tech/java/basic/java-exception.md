@@ -18,7 +18,7 @@ Exception 类又进一步分为两类：`受检异常` 和 `非受检异常`。
 
 **非受检异常（Unchecked Exception）**：包括运行时异常（`RuntimeException`及其子类）和错误（`Error`及其子类）。这些异常在编译时不需要被显式声明或捕获。
 
-### <font color="#5d67e8">Throwable</font>
+<font color="#5d67e8">Throwable</font>
 
 **《核心技术·卷Ⅰ》中的描述**：
 
@@ -30,7 +30,7 @@ Exception 类又进一步分为两类：`受检异常` 和 `非受检异常`。
 
 > **P137**：Java 中定义了一套完整的异常机制，所有异常都是 Throwable 的子类，为 `Error`（致命异常）和 `Exception`（非致命异常）。
 
-### <font color="#5d67e8">Error</font>
+<font color="#5d67e8">Error</font>
 
 **《核心技术·卷Ⅰ》中的描述**：
 
@@ -42,7 +42,7 @@ Exception 类又进一步分为两类：`受检异常` 和 `非受检异常`。
 
 > **P137**：Error 是一种非常特殊的异常类型，它的出现标识着系统发生了不可控的错误，例如 `StackOverflowError` 和 `OutOfMemoryError` 。针对此类错误，程序无法处理，只能人工介入。
 
-### <font color="#5d67e8">Exception</font>
+<font color="#5d67e8">Exception</font>
 
 **《核心技术·卷Ⅰ》中的描述**：
 
@@ -68,7 +68,7 @@ Exception 类又进一步分为两类：`受检异常` 和 `非受检异常`。
 
 ![异常分类结构](exception-classification.svg)
 
-《码出高效》P138：图 5-1 异常分类结构
+图源：《码出高效》P138：图 5-1 异常分类结构
 
 ## 异常的处理方式
 
@@ -76,7 +76,7 @@ Exception 类又进一步分为两类：`受检异常` 和 `非受检异常`。
 
 ![常见的异常](throwable.svg)
 
-### Error
+<font color="#5d67e8">Error</font>
 
 - **OutOfMemoryError**：表明 Java 堆内存不足，无法为对象分配内存空间。
 这个错误通常发生在应用程序试图创建新的对象，但堆内存空间已经被完全占用时。
@@ -85,7 +85,7 @@ Exception 类又进一步分为两类：`受检异常` 和 `非受检异常`。
 - **StackOverflowError**：当线程的堆栈大小超过了 JVM 设置的限制时，会抛出此错误。
 这通常是由于程序中存在无限制的递归调用或递归深度过大导致的。
 
-### 运行时异常（Unchecked Exception）
+<font color="#5d67e8">运行时异常（Unchecked Exception）</font>
 
 常见的运行时异常包括：
 
@@ -103,7 +103,7 @@ Exception 类又进一步分为两类：`受检异常` 和 `非受检异常`。
 - SecurityException（安全异常，比如权限不够）
 - UnsupportedOperationException(不支持的操作异常，比如重复创建同一用户)
 
-### 编译期异常（Checked Exception）
+<font color="#5d67e8">编译期异常（Checked Exception）</font>
 
 常见的编译期异常包括：
 

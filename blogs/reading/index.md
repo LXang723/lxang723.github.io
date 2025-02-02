@@ -1,5 +1,4 @@
 ---
-sticky: 2
 title: Reading
 # 设置单个密码 123456
 # password: 14e1b600b1fd579f47433b88e8d85291
