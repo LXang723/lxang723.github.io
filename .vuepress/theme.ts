@@ -103,9 +103,9 @@ export default recoTheme({
         },
     },
     // https://www.algolia.com/doc/tools/crawler/apis/configuration/
-    algolia: {
-        appId: '5J2VCJ71Q9',
-        apiKey: 'cec866fe6035358f08779a4fdb539058',
-        indexName: 'lxang723_blog_5j2vcj71q9_pages'
-    },
+    // algolia: {
+    //     appId: '5J2VCJ71Q9',
+    //     apiKey: 'cec866fe6035358f08779a4fdb539058',
+    //     indexName: 'lxang723_blog_5j2vcj71q9_pages'
+    // },
 })

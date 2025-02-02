@@ -8,6 +8,7 @@ import { oml2dPlugin } from 'vuepress-plugin-oh-my-live2d';
 import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom';
 // 代码高亮
 import { prismjsPlugin } from '@vuepress/plugin-prismjs';
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
 export default defineUserConfig({
   // base: '/',
@@ -31,6 +32,22 @@ export default defineUserConfig({
   port: 18888,
   // open: true,
   plugins: [
+    docsearchPlugin({
+      appId: '5J2VCJ71Q9',
+      apiKey: 'cec866fe6035358f08779a4fdb539058',
+      indexName: 'lxang723_blog_5j2vcj71q9_pages',
+      placeholder: '搜索文档',
+      locales: {
+        '/': {
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonText: '搜索',
+            },
+          },
+        },
+      },
+    }),
     // https://ecosystem.vuejs.press/zh/plugins/markdown/prismjs.html
     // 行号受语言类型影响，样式显示有问题，使用默认的就好
     // prismjsPlugin({
