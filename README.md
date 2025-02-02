@@ -17,7 +17,7 @@ bannerBrand:
   lang: zh-CN
   title: 柒月廿三，浅笔流年。
   description: LXang723's Blog
-  tagline: 你好，我是 LXang723，一名码农。目前正在摸索怎么写，写什么。
+  tagline: 你好，我是 LXang723，一名码农。目前正在摸索写什么，怎么写。每天进步一点点。
   buttons:
     - { text: Todo, link: './blogs/todo' }
     - { text: Github, link: 'https://github.com/LXang723', type: 'plain' }
