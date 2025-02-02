@@ -32,12 +32,15 @@ export default defineUserConfig({
   // open: true,
   plugins: [
     // https://ecosystem.vuejs.press/zh/plugins/markdown/prismjs.html
-    prismjsPlugin({
-      theme: 'material-light',
-      // light: material-light、ateliersulphurpool-light
-      // dark: 'duotone-sea'
-      // themes: { light: 'ateliersulphurpool-light', dark: 'shades-of-purple' },
-    }),
+    // 行号受语言类型影响，样式显示有问题，使用默认的就好
+    // prismjsPlugin({
+    //   // theme: 'duotone-sea',
+    //   // light: material-light、ateliersulphurpool-light
+    //   // dark: 'duotone-sea'
+    //   themes: { light: 'ateliersulphurpool-light', dark: 'shades-of-purple' },
+    //   notationFocus: true,
+    //   notationHighlight: true
+    // }),
     // https://ecosystem.vuejs.press/zh/plugins/features/medium-zoom.html
     // https://github.com/francoischalifour/medium-zoom#options
     mediumZoomPlugin({
@@ -49,7 +52,7 @@ export default defineUserConfig({
     }),
     // 看板娘
     oml2dPlugin({
-      primaryColor: '#5d67e8', // #727cf5
+      primaryColor: '#5d67e8',
       menus: {
         disable: false,
       },

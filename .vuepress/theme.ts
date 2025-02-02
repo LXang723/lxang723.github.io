@@ -102,4 +102,11 @@ export default recoTheme({
             avatar_cdn: 'https://cravatar.cn/avatar/' // 自定义avatar cdn
         },
     },
+    // https://www.algolia.com/doc/tools/crawler/apis/configuration/
+    algolia: {
+        appId: '5J2VCJ71Q9',
+        apiKey: 'cec866fe6035358f08779a4fdb539058',
+        indexPrefix: 'lxang723_blog_5j2vcj71q9_',
+        schedule: 'every 1 day at 3:00 pm',
+    },
 })
