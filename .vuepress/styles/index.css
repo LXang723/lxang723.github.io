@@ -87,7 +87,7 @@ body {
     font-size: 1rem !important;
 }
 
-/* 右侧页面导航 三级标题 显示不全 g */
+/* 右侧页面导航 三级标题 显示不全 比如：字母 g */
 .page-catalog-container ul .page-catalog-menu-depth_3 {
     line-height: 1.35rem !important;
 }
@@ -98,10 +98,48 @@ body {
     /* margin-top: 0rem !important; */
     .banner-brand__content .title {
         font-size: 4.25rem !important;
-        /* background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%)  !important; */
         /* background-image: linear-gradient(to right, #00F260, #0575E6 ) !important;  */
     }
 }
+
+.dropdown-link__container {
+    .dropdown-link__item .xicon-container.left {
+        align-items: end !important;
+        svg {
+            width: 16px !important;
+            height: 16px !important;
+            font-size: 16px !important;
+        }
+    }
+}
+.theme-reco-md-content {
+    mark {
+        /* color: aliceblue; */
+        background-color: #ffb366;
+        /* background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%); */
+    }
+    u , u code {
+        text-decoration-line: underline;
+        text-decoration-color: #ff7eb9;
+        text-decoration-thickness: 2px;
+        text-decoration-style: wavy;
+        -moz-text-decoration-color: #ff7eb9;
+    }
+}
+
+/* .navbar-container .navbar-inner {
+    max-width: 1600px !important;
+} */
+
+/* 排除掉首页的 .banner-brand__wrapper（不排除会导致右移）*/
+/* .theme-container .theme-main:not(:has(.banner-brand__wrapper)) {
+    max-width: 1600px !important;
+} */
+
+/* TODO 行号 */
+/* div[class*="language-java"].line-numbers-mode .line-numbers .line-number {
+    margin-top: 1rem;
+} */
 
 /* magic-card__bg */
 
