@@ -29,6 +29,11 @@ const links = [
         title: 'TypingClub',
         logo: 'https://static.typingclub.com/m/corp2/img/favicon.png',
         link: 'https://www.typingclub.com/sportal/'
+    },
+    {
+        title: 'stack overflow',
+        logo: 'https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196',
+        link: 'https://stackoverflow.com/'
     }
 ]
 
