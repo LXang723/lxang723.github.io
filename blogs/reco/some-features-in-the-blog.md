@@ -37,7 +37,7 @@ usage
 
 对博客中使用的编写功能做一个简单的记录。
 
-![channels4_banner](channels4_banner.jpg)
+![channels4_banner](./assets/channels4_banner.jpg)
 
 ## 序号
 ❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾ ❿   

@@ -1,6 +1,6 @@
 ---
 title: IoC
-date: 2019-04-09
+date: 2024-04-09
 categories:
  - SpringBoot
 ---

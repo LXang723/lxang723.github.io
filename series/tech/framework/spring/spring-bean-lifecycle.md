@@ -16,9 +16,9 @@ Spring Bean 生命周期的主要阶段：
   - 初始化：`invokeInitMethods`
   - BeanPostProcessor 后置处理：`applyBeanPostProcessorsAfterInitialization`
 - **使用**
-- **销毁**`：registerDisposableBeanIfNecessary`
+- **销毁**：`registerDisposableBeanIfNecessary`
 
-![Bean 的生命周期](bean-lifecycle.svg)
+![Bean 的生命周期](./assets/bean-lifecycle.svg/)
 
 ## 1. 实例化（Instantiation）
 
