@@ -42,6 +42,8 @@ const series = {
         {
             text: 'Spring IoC',
             children: [
+                'spring-ioc',
+                'spring-bean',
                 'spring-bean-lifecycle',
             ],
         },
@@ -54,12 +56,73 @@ const series = {
     ],
     // 博客搭建
     '/blogs/reco/': [
-        'setting-up-a-personal-blog.md',
+        'setting-up-a-personal-blog',
         'record-of-using-vuepress-reco',
         'tips-for-using-reco',
         'record-of-using-namesilo',
         'record-of-using-cloudflare',
         'some-features-in-the-blog'
+    ],
+    // 面试突击
+    '/series/interview-preparation/': [
+        {
+            text: 'Java',
+            children: []
+        }
+    ],
+    // 设计模式
+    '/series/design-patterns/': [
+        {
+            text: '创建型模式',
+            children: []
+        },
+        {
+            text: '结构型模式',
+            children: ['proxy']
+        },
+        {
+            text: '行为模式',
+            children: []
+        }
+    ],
+    // MySQL
+    '/series/tech/database/mysql/': [
+        {
+            text: 'MySQL 基础',
+            children: []
+        },
+        {
+            text: 'MySQL 存储引擎',
+            children: []
+        },
+        {
+            text: 'MySQL 索引',
+            children: ['clustered_index']
+        },
+        {
+            text: 'MySQL 事务',
+            children: []
+        },
+        {
+            text: 'MySQL 日志',
+            children: []
+        },
+        {
+            text: 'MySQL 优化',
+            children: []
+        }
+    ],
+    // 项目经验
+    '/series/project-experience/': [
+        {
+            text: 'ZSecurity',
+            children: [
+                'cybersecurity-compliance-management-platform',
+                'software-license-management-platform',
+                'automated-metrics-collection-platform',
+                'evaluation-report-analysis-platform'
+            ]
+        },
     ],
 }
 
