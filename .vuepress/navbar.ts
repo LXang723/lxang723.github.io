@@ -3,6 +3,7 @@ const navbar = [
     { text: '首页', link: '/', icon: 'IconHome' },
     { text: '分类', link: '/categories/Blog/1.html', icon: 'IconCategory' },
     { text: '标签', link: '/tags/Blog/1.html', icon: 'IconTag' },
+    // 技术笔记
     {
         text: '技术笔记',
         icon: 'IconNote2',
@@ -23,9 +24,12 @@ const navbar = [
                     { text: 'Netty', link: '/series/tech/framework/netty/' },
                 ],
             },
-            // { text: 'MySQL', link: '/series/java/javase/javase' },
-            // { text: 'SpringBoot', link: '/series/java/javase/javase' },
-            // { text: 'SpringCloud', link: '/series/java/javase/javase' },
+            {
+                text: '数据库',
+                children: [
+                    { text: 'MySQL', link: '/series/tech/database/mysql/' },
+                ],
+            },
             // {
             //     text: 'Java',
             //     icon: 'IconCoffee',
@@ -44,6 +48,17 @@ const navbar = [
             // },
         ]
     },
+    // 面试突击
+    // {
+    //     text: '面试突击',
+    //     icon: 'IconNote2',
+    //     children: [
+    //         {
+    //             text: 'Java',
+    //             link: '/series/interview-preparation/java/'
+    //         }
+    //     ]
+    // },
     // 其他
     {
         text: '其他',
@@ -81,7 +96,8 @@ const navbar = [
                 text: '其他',
                 // icon: 'IconCategory2',
                 children: [
-                    { text: '设计模式', link: '/series/design-pattern/', icon: 'IconDesignPattern' },
+                    { text: '设计模式', link: '/series/design-patterns/', icon: 'IconDesignPattern' },
+                    { text: '项目经验', link: '/series/project-experience/', icon: 'IconDesignPattern' },
                     { text: '博客搭建', link: '/blogs/reco/setting-up-a-personal-blog', icon: 'IconBlog' },
                 ],
             },
