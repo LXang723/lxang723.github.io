@@ -8,6 +8,12 @@ tags:
  - 随笔
 ---
 
+## 先做个垃圾出来
+
+![alt text](wd-20241222-1.jpg) 
+
+图片来源：[https://www.uisdc.com/talk/121207603622.html](https://www.uisdc.com/talk/121207603622.html)
+
 柒月廿三（qī yuè niàn sān），农历七月二十三日，我的生日。
 
 logo 是几年前我发小帮我弄的，一个长得很像柳俊烈的家伙。
