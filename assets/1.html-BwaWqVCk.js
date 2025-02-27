@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as a}from"./app-CiE5TDcB.js";const r={};function n(o,c){return a(),e("div")}const s=t(r,[["render",n],["__file","1.html.vue"]]),_=JSON.parse('{"path":"/tags/Spring/1.html","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{s as comp,_ as data};
