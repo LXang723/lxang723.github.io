@@ -48,14 +48,14 @@ const navbar = [
             // },
         ]
     },
-    // 面试突击
+    // 面试刷题
     // {
-    //     text: '面试突击',
-    //     icon: 'IconNote2',
+    //     text: '面试刷题',
+    //     icon: 'IconList',
     //     children: [
     //         {
     //             text: 'Java',
-    //             link: '/series/interview-preparation/java/'
+    //             link: '/series/interview/java/'
     //         }
     //     ]
     // },
@@ -72,9 +72,9 @@ const navbar = [
                 // icon: 'IconClipboard',
                 children: [
                     // Categories 分类
-                    { text: '分类', link: '/categories/Blog/1', icon: 'IconCategory' },
+                    // { text: '分类', link: '/categories/Blog/1', icon: 'IconCategory' },
                     // Tags 标签
-                    { text: '标签', link: '/tags/Blog/1', icon: 'IconTag' },
+                    // { text: '标签', link: '/tags/Blog/1', icon: 'IconTag' },
                     // Timeline 归档
                     { text: '归档', link: '/timeline', icon: 'IconTimeline' },
                     // Blogs 博客
@@ -98,7 +98,7 @@ const navbar = [
                 children: [
                     { text: '设计模式', link: '/series/design-patterns/', icon: 'IconDesignPattern' },
                     { text: '项目经验', link: '/series/project-experience/', icon: 'IconDesignPattern' },
-                    { text: '博客搭建', link: '/blogs/reco/setting-up-a-personal-blog', icon: 'IconBlog' },
+                    { text: '面试刷题', icon: 'IconList', link: '/series/interview/' },
                 ],
             },
         ]

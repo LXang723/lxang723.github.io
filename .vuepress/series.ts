@@ -63,11 +63,17 @@ const series = {
         'record-of-using-cloudflare',
         'some-features-in-the-blog'
     ],
-    // 面试突击
-    '/series/interview-preparation/': [
+    // 面试刷题
+    '/series/interview/': [
         {
             text: 'Java',
             children: []
+        },
+        {
+            text: 'Spring Boot',
+            children: [
+                'spring-boot/external-config'
+            ]
         }
     ],
     // 设计模式

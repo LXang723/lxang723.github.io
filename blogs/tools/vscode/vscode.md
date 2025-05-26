@@ -22,3 +22,5 @@ VSCode（Visual Studio Code）
 **首选项（Preference）-> 键盘快捷方式（Keyboard Shortcuts）**
 
 搜索 "转换为大写/转换为小写"，或者 "upper/lower"
+
+![settings-font](settings-font.png)

@@ -153,3 +153,32 @@ body {
         padding-right: 5vw !important;
     }
 } */
+
+/* series 系列 展示全部*/
+/* .series-container .series-group h5.series-heading + ul li span.xicon-content {
+    white-space: normal !important;
+} */
+
+/* series 系列 移入展示全部*/
+.series-container .series-group h5.series-heading + ul li span.xicon-content:hover {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    width: auto;
+}
+
+/* .series-container .series-group h5.series-heading + ul li a:hover::after {
+    content: attr(aria-label);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: rgb(93 103 232 / 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: normal;
+    width: max-content;
+    max-width: 200px;
+    z-index: 10;
+    font-size: 14px;
+} */

@@ -12,7 +12,11 @@ tags:
 用过的东西做一个记录。  
 写完的做一个索引页（内部链接、路由路径）。
 
-## 技术笔记（面试）
+创建一个 `my-practice` 仓库，保存实践代码。
+
+## 面试刷题
+
+## 技术笔记
 
 ### Java 基础
 - [x] [Java 序列化](/series/tech/java/basic/serialization.md)
@@ -93,6 +97,10 @@ execute 执行时间记录  继承 Task 重写 run
 
 ## 技术教程  
 
+使用 [VitePress](https://vitepress.dev/zh/) 和 [DeepSeek](https://www.deepseek.com/) 翻译 [Spring Framework Documentation](https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/index.html) 。
+
+spring-docs-deepseek
+
 ### 环境搭建
 
 ## 工具
@@ -104,6 +112,7 @@ https://mp.weixin.qq.com/s/726UK626H8cPboRbjP1I1Q
 
 
 ## 追番追剧
+
 经典台词
 
 ## 随笔  

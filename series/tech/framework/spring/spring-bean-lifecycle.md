@@ -38,6 +38,8 @@ Spring 容器将配置的属性值或依赖注入到 Bean 中。
 
 `org.springframework.beans.factory.BeanFactory` 的类注释中，描述了完整的初始化方法及其标准顺序。
 
+[BeanFactory (Spring Framework 5.3.39 API)](https://docs.spring.io/spring-framework/docs/5.3.39/javadoc-api/org/springframework/beans/factory/BeanFactory.html)
+
 spring-framework-<Badge type="tip" text="v6.2.1" vertical="middle" />
 
 ::: info BeanFactory&nbsp;类的相关注释
