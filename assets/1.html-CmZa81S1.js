@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app-C3BBJh1h.js";const o={};function r(l,c){return a(),t("div")}const s=e(o,[["render",r],["__file","1.html.vue"]]),_=JSON.parse('{"path":"/tags/Cloudflare/1.html","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{s as comp,_ as data};
