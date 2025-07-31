@@ -7,16 +7,174 @@ tags:
  - JDK
 ---
 
+不同项目依赖不同 JDK 版本：旧项目可能基于 JDK 8 开发，而新项目可能使用 JDK 11/17/21 的新特性。多版本 JDK 可避免因版本不匹配导致的编译或运行时错误。
+
 像 Maven 或 Gradle 这样的构建工具可能要求特定版本的 JDK。例如，Maven 在一些情况下可能需要 JDK 8，而 Gradle 可能要求更高版本的 JDK。
 
 ## 1. 使用 JVMS
 
-🔗  [JDK Version Manager (JVMS) for Windows（Windows JDK 版本管理器 ）](https://github.com/ystyle/jvms)
+GitHub：[JDK Version Manager (JVMS) for Windows（Windows JDK 版本管理器 ）](https://github.com/ystyle/jvms)
 
-类似于 NVM 。
+### 初始化
 
-### 使用方法 Usage
+[下载文件](https://github.com/ystyle/jvms/releases)，例如 jvms_v2.1.7_amd64.zip，
+右键，解压到 jvms_v2.1.7_amd64（压缩包内只有一个  `jvms.exe` 文件）。  
+将 jvms_v2.1.7_amd64 文件夹复制到希望存放的位置，以 `D:\Program Files\jvms_v2.1.7_amd64` 为例。
 
+- 以管理员身份打开终端（cmd 或 powershell）。
+
+必须是管理员，因为接下来要创建 symlink（符号链接），否则会失败！
+
+- 进入 `jvms.exe` 所在目录。
+
+``` powershell
+D:
+cd "Program Files\jvms_v2.1.7_amd64"
+```
+
+- 初始化
+``` powershell
+.\jvms.exe init
+```
+
+输出示例：
+
+```
+PS C:\Windows\system32> D:
+PS D:\> cd "Program Files\jvms_v2.1.7_amd64"
+PS D:\Program Files\jvms_v2.1.7_amd64> .\jvms.exe init
+set `JAVA_HOME` Environment variable to  C:\Program Files\jdk
+add jvms.exe to `path` Environment variable
+PS D:\Program Files\jvms_v2.1.7_amd64>
+``` 
+
+<mark>
+   set `JAVA_HOME` Environment variable to  C:\Program Files\jdk  <br>
+   add jvms.exe to `path` Environment variable
+</mark>
+
+这一步会：
+
+- **设置 JAVA_HOME 环境变量**：创建一个（或覆盖）名为 `JAVA_HOME`， 值为 `C:\Program Files\jdk` 的系统环境变量。
+
+![alt text](jvms-java-home.png)
+
+- 在 `C:\Program Files` 文件夹下会生成一个 `jdk` 的快捷方式（映射到实际使用版本的文件位置），后续切换会改变目标值。
+
+![alt text](jvms-symlink.png)
+
+- **将 jvms.exe 添加到 PATH**：在 Path 系统变量内追加一个 `D:\Program Files\jvms_v2.1.7_amd64`。
+
+![alt text](jvms-path.png)
+
+### 安装和切换 JDK
+
+再次以管理员身份打开终端。
+
+- 使用 help 命令查看使用方法。
+
+```
+PS C:\Windows\system32> jvms -h
+NAME:
+   jvms - JDK Version Manager (JVMS) for Windows
+
+USAGE:
+   jvms.exe [global options] command [command options] [arguments...]
+
+VERSION:
+   v2.1.7
+
+COMMANDS:
+     init        Initialize config file
+     list, ls    List current JDK installations.
+     install, i  Install available remote jdk
+     switch, s   Switch to use the specified version or index number.
+     remove, rm  Remove a specific version.
+     rls         Show a list of versions available for download.
+     proxy       Set a proxy to use for downloads.
+     help, h     Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --help, -h     show help
+   --version, -v  print the version
+PS C:\Windows\system32>
+```
+
+- 查看可用版本。
+
+``` powershell
+jvms rls
+```
+
+查看所有可用版本。
+
+``` powershell
+jvms rls -a
+```
+
+输出示例：
+
+```
+PS C:\Windows\system32> jvms rls
+    1) 21.0.4
+    2) 20.0.0
+    3) 17.0.6
+    4) amazon_jdk17.0.6
+    5) 11.0.8
+    6) amazon_jdk11.0.13_8
+    7) 1.8.0_151
+    8) amazon_jdk1.8.0_265
+    9) amazon_jdk1.8.0_222_x86
+    10) 1.8.0_74_x86
+
+use "jvms rls -a" show all the versions
+
+For a complete list, visit https://raw.githubusercontent.com/ystyle/jvms/new/jdkdlindex.json
+```
+
+- 安装指定版本 jdk。
+
+``` powershell
+jvms install 1.8.0_151
+```
+
+输出示例：
+
+```
+PS C:\Windows\system32> jvms install 1.8.0_151
+Downloading jdk version 1.8.0_151...
+ 185.90 MB / 185.90 MB [=================================] 100.00% 18.97 MB/s 9s
+Complete
+Installing JDK 1.8.0_151 ...
+Installation complete. If you want to use this version, type
+```
+
+文件会下载至 `D:\Program Files\jvms_v2.1.7_amd64\store`（添加本地 jdk，也将文件放到这）。
+
+- 切换 JDK 版本至 1.8.0_151。
+
+```
+jvms switch 1.8.0_151
+```
+
+- 查看当前版本。
+
+```
+java -version
+```
+
+输出示例：
+
+```
+PS C:\Windows\system32> jvms switch 1.8.0_151
+Switch success.
+Now using JDK 1.8.0_151
+PS C:\Windows\system32> java -version
+java version "1.8.0_151"
+Java(TM) SE Runtime Environment (build 1.8.0_151-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.151-b12, mixed mode)
+PS C:\Windows\system32>
+```
 
 ## 2. GUI
 
