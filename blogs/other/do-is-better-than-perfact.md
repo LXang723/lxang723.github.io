@@ -5,7 +5,7 @@ date: 2025-04-07
 categories:
  - Other
 tags:
- - 随
+ - 随笔
 ---
 
 DONE IS BETTER THAN PERFECT.
