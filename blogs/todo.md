@@ -97,10 +97,6 @@ execute 执行时间记录  继承 Task 重写 run
 
 ## 技术教程  
 
-使用 [VitePress](https://vitepress.dev/zh/) 和 [DeepSeek](https://www.deepseek.com/) 翻译 [Spring Framework Documentation](https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/index.html) 。
-
-spring-docs-deepseek
-
 ### 环境搭建
 
 ## 工具
