@@ -4,7 +4,7 @@ date: 2022-08-26
 tags:
  - Kingbase
 categories:
- - 数据库
+ - DB
 ---
 
 

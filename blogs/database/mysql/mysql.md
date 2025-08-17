@@ -4,7 +4,7 @@ date: 2024-05-29
 tags:
  - MySQL
 categories:
- - 数据库
+ - DB
 ---
 
 ![leancloud-storage](https://img.shields.io/badge/MySQL-5.7-orange.svg)
