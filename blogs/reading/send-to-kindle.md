@@ -86,4 +86,4 @@ yourname_xxx@kindle.com
 
 [www.amazon.com/sendtokindle](https://www.amazon.com/sendtokindle)
 
-![Send to Kindle](./send-to-kindle/Send to Kindle.png)
+![Send to Kindle](<./send-to-kindle/Send to Kindle.png>)

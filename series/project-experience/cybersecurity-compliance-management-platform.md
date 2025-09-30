@@ -8,6 +8,8 @@ title: 网络安全合规性管理平台
 
 **网络安全合规性管理平台**（Cybersecurity Compliance Management Platform）：依据国家技术标准，自主研发的面向网络安全建设与管理的平台管理工具。
 
+![alt text](2.3.5.RELEASE.png)
+
 ## 技术架构
 
 ## 个人职责
