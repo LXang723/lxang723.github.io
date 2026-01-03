@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./app-BcegtIRQ.js";const o={};function n(r,c){return a(),e("div")}const s=t(o,[["render",n],["__file","1.html.vue"]]),i=JSON.parse('{"path":"/tags/Git-Commitizen/1.html","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{s as comp,i as data};
