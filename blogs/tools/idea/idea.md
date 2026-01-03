@@ -2,9 +2,9 @@
 title: IDEA 配置记录
 date: 2024-12-15
 tags:
- - IDEA
+  - IDEA
 categories:
- - Tools
+  - Tools
 ---
 
-
+![alt text](image.png)

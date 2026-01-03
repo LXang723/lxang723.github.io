@@ -1,5 +1,5 @@
 ---
-title: 面试刷题之 Spring Boot 篇
+title: 复习之 Spring Boot 篇
 ---
 
 在 **Spring Boot** 中，**"Boot"** 代表的是 **"Bootstrap"**（引导）的意思。这个词来源于计算机科学中的术语，通常表示启动或初始化一个系统或应用程序的过程。Spring Boot 的设计目标就是帮助开发者快速启动和运行 Spring 应用程序，因此它的名字中的 "Boot" 强调了其**快速启动**和**简化配置**的特性。

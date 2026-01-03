@@ -3,9 +3,9 @@ sticky: 3
 title: Todo
 date: 2024-12-26
 categories:
- - Todo
+  - Todo
 tags:
- - Todo
+  - Todo
 ---
 
 博客内容概览，也作为博客的编写计划，慢慢完善。  
@@ -14,11 +14,10 @@ tags:
 
 创建一个 `my-practice` 仓库，保存实践代码。
 
-## 面试刷题
-
 ## 技术笔记
 
 ### Java 基础
+
 - [x] [Java 序列化](/series/tech/java/basic/serialization.md)
 - [ ] 数据类型
 - [x] 异常
@@ -48,21 +47,20 @@ tags:
 ❸ 客户端如何访问（网关）  
 ④ 微服务出现问题，如何治理  
 服务容错，保证不能被外部环境影响，也不能被上游服务调用压垮，也不能被下游服务延迟拖垮  
-⑤ 微服务问题排错（链路追踪） 
+⑤ 微服务问题排错（链路追踪）
 
-#### 网关 
+#### 网关
 
 #### 中间件
 
-## 编程语言  
+## 编程语言
 
 [//]: (Go)
-
 [//]: (Python)
 
 ## 前端
 
-JavaScript  
+JavaScript
 
 CSS
 
@@ -70,32 +68,32 @@ Vue
 
 React
 
-## 项目经验分享  
+## 项目经验分享
 
 需求背景：
 
 ### 许可证
 
 工厂、单例  
-证书监听器  项目启动时自动安装  
+证书监听器 项目启动时自动安装  
 ExecutionListener notify() start end  
 定时器  
-系统时间与业务时间合理化校验  
+系统时间与业务时间合理化校验
 
 ### 字段加密
 
 Mybatis  
-extends BaseTypeHandler  
+extends BaseTypeHandler
 
 日志的实现
-Aspect  
+Aspect
 
-评分，线程池参数   
+评分，线程池参数
 
 quartz 抽象类 Task 实现 Job quartz  
-execute 执行时间记录  继承 Task 重写 run
+execute 执行时间记录 继承 Task 重写 run
 
-## 技术教程  
+## 技术教程
 
 ### 环境搭建
 
@@ -106,10 +104,8 @@ https://mp.weixin.qq.com/s/726UK626H8cPboRbjP1I1Q
 
 ## 阅读笔记
 
-
 ## 番剧影
 
 经典台词
 
-## 随笔  
-
+## 随笔

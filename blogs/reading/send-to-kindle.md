@@ -87,3 +87,7 @@ yourname_xxx@kindle.com
 [www.amazon.com/sendtokindle](https://www.amazon.com/sendtokindle)
 
 ![Send to Kindle](<./send-to-kindle/Send to Kindle.png>)
+
+Z-library
+
+[How to send a book to Kindle](https://z-library.sk/info/howtokindle)
